@@ -10,7 +10,7 @@ permalink: /Research/
 
 ### Work in Progress
 ---
-"Can Games measure mobile money adoption? Evidence from Mozambique" , _Master’s thesis supervised by:  [Professor Catia Batista](https://www.catiabatista.org/) (Nova SBE). <b>[Download here]([https://jamesahabyona.github.io/Research/])  </b>_
+"Can Games measure mobile money adoption? Evidence from Mozambique" , _Master’s thesis supervised by:  [Professor Catia Batista](https://www.catiabatista.org/) (Nova SBE). <b> [Download here](https://jamesahabyona.github.io/Research/)  </b>_
 
  "Artisanal Mines and Women Empowerment" with Uchechi S. Anaduaka 
 
