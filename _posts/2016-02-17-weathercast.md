@@ -1,13 +1,13 @@
 ---
 layout: inner
 position: right
-title: 'Child labour in Uganda : An annotated bibliography '
+title: 'Artisanal Mines and Women Empowerment'
 date: 2022-05-20 15:56:00
-categories: Child labour
-tags: ChildlabourUganda
-featured_image: '/img/Mica-Collection-II.jpg'
-project_link: 'https://wncb.org/annotated-bibliographies-for-wncb-countries/'
-button_text: 'Project Website'
+categories: Development 
+tags: Women Empowerment, Africa 
+featured_image: 'img/dhsgoldafrica.png'
+project_link: 'https://jamesahabyona.github.io/'
+button_text: 'Download here'
 button_icon: 'flask'
-lead_text: 'The purpose of this document is to provide an overview of the child labour situation in Uganda ﻿' 
+lead_text: 'We are studying the effec' 
 ---
