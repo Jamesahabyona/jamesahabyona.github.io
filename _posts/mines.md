@@ -5,7 +5,7 @@ title: '"Artisanal Mines and Women Empowerment" with Uchechi S. Anaduaka"'
 date: 2023-12-20 15:56:00
 categories: Development
 tags: Artisanal Mines, Women, Economic Empowerment, Africa
-featured_image: '/img/239659581_5059983824028057_5168182904161124933_n.jpg'
+featured_image: '/dhsgoldafrica.png'
 project_link: ''
 button_text: 'Download here'
 button_icon: 'flask'
