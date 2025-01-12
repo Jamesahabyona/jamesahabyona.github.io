@@ -12,6 +12,9 @@ permalink: /Research/
 ---
  "Can Games measure mobile money adoption? Evidence from Mozambique" , _Master’s thesis supervised by:  [Professor Catia Batista](https://www.catiabatista.org/) (Nova SBE). <b>[Download here](https://jamesahabyona.github.io/games_mobile_money_adoption.pdf)  </b>_
 
+ <img src="https://github.com/Jamesahabyona/jamesahabyona.github.io/blob/master/dhsgoldafrica.png" alt="Artisanal Mines and Women Empowerment" title="Artisanal Mines and Women Empowerment with Uchechi S. Anaduaka" style="width:50%; height:auto;">
+
+
 "Artisanal Mines and Women Empowerment" with Uchechi S. Anaduaka" 
  ![alt text](https://github.com/Jamesahabyona/jamesahabyona.github.io/blob/master/dhsgoldafrica.png?raw=true) 
  
