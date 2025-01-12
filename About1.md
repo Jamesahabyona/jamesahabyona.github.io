@@ -1,7 +1,7 @@
 ---
 layout: inner
 title: About
-permalink: /About1/
+permalink: /About/
 ---
 
 ## About me
