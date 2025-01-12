@@ -14,7 +14,6 @@ permalink: /Research/
 
 "Artisanal Mines and Women Empowerment" with Uchechi S. Anaduaka"  
 
-<img src="https://github.com/Jamesahabyona/jamesahabyona.github.io/blob/master/dhsgoldafrica.png" alt="Artisanal Mines and Women Empowerment" title="Artisanal Mines and Women Empowerment with Uchechi S. Anaduaka" style="width:50%; height:auto;">
 
 
 
