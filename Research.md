@@ -15,7 +15,11 @@ permalink: /Research/
  "Artisanal Mines and Women Empowerment" with Uchechi S. Anaduaka
  
 Population changes in Uganda between 1990 and 2020
- ![alt text](https://github.com/Jamesahabyona/jamesahabyona.github.io/blob/master/Uganda-population-change.png?raw=true)
+ ![alt text](https://github.com/Jamesahabyona/jamesahabyona.github.io/blob/master/Uganda-population-change.png?raw=true) alt="Population changes in Uganda" width="500"
+
+
+ <img src="https://github.com/Jamesahabyona/jamesahabyona.github.io/blob/master/Uganda-population-change.png?raw=true" alt="Population changes in Uganda" style="width: 50%; height: auto;">
+
 
 
 
