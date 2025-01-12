@@ -9,5 +9,5 @@ featured_image: 'img/dhsgoldafrica.png'
 project_link: 'https://jamesahabyona.github.io/'
 button_text: 'Download here'
 button_icon: 'flask'
-lead_text: 'coming soon' 
+lead_text: 'Draft coming soon' 
 ---
