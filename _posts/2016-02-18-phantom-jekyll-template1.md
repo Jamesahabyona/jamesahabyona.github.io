@@ -1,13 +1,13 @@
 ---
 layout: inner
 position: right
-title: 'Can Games measure mobile money adoption? Evidence from Mozambique'
+title: 'Child labour in Uganda: An annotated bibliography'
 date: 2016-02-20 21:15:00
-categories: Technology Adoption
-tags: Mobile Money, Technology Adoption, Behavioral Games ,Measurements, Mozambique
-featured_image: '/img/posts/istockphoto-1551382168-1024x1024.jpg'
-project_link: 'https://jamesahabyona.github.io/'
+categories: Child Labour
+tags: Child Labour, Development, Africa, Uganda
+featured_image: 'img/child-labour.jpg'
+project_link: 'https://jamesahabyona.github.io/Uganda-1.pdf'
 button_icon: 'flask'
 button_text: 'Download here'
-lead_text:  I combine tools from behavioral economics and mobile money transaction data to test a novel method for measuring mobile money adoption.
+lead_text:  We provide a comprehensive overview of child labour in Uganda, offering insights into its causes, consequences, and potential solutions. We use sources such as research articles , reports, and policy documents , making it a valuable resource for researchers, policy makers and civil society organizations interested in understanding and addressing this critical problem
 ---
