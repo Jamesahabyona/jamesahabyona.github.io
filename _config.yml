@@ -103,7 +103,7 @@ enable_nav: true
 nav_item:
   - { url: '/', text: 'Home' }
   - { url: '/Research', text: 'Research' }
-  - { url: '/About', text: 'About' }
+ # - { url: '/About', text: 'About' }
 
 
 
