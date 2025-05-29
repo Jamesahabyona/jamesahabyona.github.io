@@ -1,59 +1,449 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-  <!-- Meta -->
-  <meta charset="utf-8">
-
-  <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% elsif post.title %}{{ post.title }} - {{ site.title }}{% else %}{{ site.title }} - {{ site.description }}{% endif %}</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta content="yes" name="apple-mobile-web-app-capable">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.url }}/feed.xml">
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.url }}/atom.xml">
-
-  <!-- Favicons -->
-  <link rel="icon" href="{{ site.url }}/img/favicon.png">
-
-  <!-- Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700|Merriweather:400,300,300italic,400italic,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="{{ "/css/animate.min.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Ahabyona - Applied Microeconomist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-navy: #1e3a5f;
+            --accent-gold: #c8aa6e;
+            --light-gray: #f8f9fa;
+            --medium-gray: #6c757d;
+            --dark-gray: #343a40;
+            --white: #ffffff;
+            --cream: #fefdfb;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background: var(--cream);
+        }
+        
+        /* Skip Link for Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--primary-navy);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 0 0 4px 4px;
+            z-index: 1000;
+            transition: top 0.3s;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Header Styles */
+        .site-header {
+            background: var(--white);
+            box-shadow: 0 2px 20px rgba(30, 58, 95, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(200, 170, 110, 0.2);
+        }
+        
+        .main-navigation {
+            position: relative;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+            min-height: 70px;
+        }
+        
+        /* Brand/Logo */
+        .nav-brand {
+            flex: 0 0 auto;
+        }
+        
+        .brand-link {
+            text-decoration: none;
+            color: var(--primary-navy);
+            transition: color 0.3s ease;
+        }
+        
+        .brand-link:hover {
+            color: var(--accent-gold);
+        }
+        
+        .brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            display: block;
+            line-height: 1.2;
+        }
+        
+        .brand-title {
+            font-size: 0.9rem;
+            font-weight: 300;
+            color: var(--medium-gray);
+            font-style: italic;
+            display: block;
+            margin-top: -2px;
+        }
+        
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            width: 30px;
+            height: 24px;
+            justify-content: space-between;
+        }
+        
+        .toggle-bar {
+            width: 100%;
+            height: 2px;
+            background: var(--primary-navy);
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu-toggle[aria-expanded="true"] .toggle-bar:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        
+        .mobile-menu-toggle[aria-expanded="true"] .toggle-bar:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .mobile-menu-toggle[aria-expanded="true"] .toggle-bar:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+        
+        /* Navigation Menu */
+        .main-menu {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-list {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .nav-item {
+            position: relative;
+        }
+        
+        .nav-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 400;
+            font-size: 0.95rem;
+            padding: 0.75rem 1.25rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-navy);
+            background: rgba(30, 58, 95, 0.05);
+        }
+        
+        .nav-link.active {
+            color: var(--primary-navy);
+            font-weight: 500;
+        }
+        
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 2px;
+            background: var(--accent-gold);
+        }
+        
+        .nav-link i {
+            margin-right: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        /* CV Link Special Styling */
+        .nav-link-cv {
+            background: var(--primary-navy);
+            color: var(--white);
+            font-weight: 500;
+            margin-left: 1rem;
+        }
+        
+        .nav-link-cv:hover {
+            background: var(--accent-gold);
+            color: var(--white);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(30, 58, 95, 0.2);
+        }
+        
+        /* Main Content Area */
+        .main-content {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 70vh;
+        }
+        
+        .content-preview {
+            text-align: center;
+            padding: 4rem 0;
+        }
+        
+        .content-preview h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--primary-navy);
+            margin-bottom: 1rem;
+        }
+        
+        .content-preview p {
+            font-size: 1.2rem;
+            color: var(--medium-gray);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            .nav-container {
+                padding: 0 1rem;
+            }
+            
+            .brand-name {
+                font-size: 1.5rem;
+            }
+            
+            .brand-title {
+                font-size: 0.8rem;
+            }
+            
+            .main-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                display: none;
+                padding: 1rem 0;
+            }
+            
+            .main-menu.active {
+                display: block;
+            }
+            
+            .nav-list {
+                flex-direction: column;
+                gap: 0;
+                width: 100%;
+            }
+            
+            .nav-item {
+                width: 100%;
+            }
+            
+            .nav-link {
+                padding: 1rem 2rem;
+                width: 100%;
+                justify-content: flex-start;
+            }
+            
+            .nav-link-cv {
+                margin-left: 0;
+                margin-top: 0.5rem;
+            }
+            
+            .content-preview h1 {
+                font-size: 2.2rem;
+            }
+            
+            .content-preview p {
+                font-size: 1.1rem;
+                padding: 0 1rem;
+            }
+        }
+        
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            .nav-link:hover {
+                background: var(--primary-navy);
+                color: var(--white);
+            }
+        }
+        
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
 </head>
+<body class="academic-site">
+    <!-- Skip to Content for Accessibility -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
+    <div class="site-container" id="top">
+        <!-- Enhanced Academic Navigation -->
+        <header class="site-header" role="banner">
+            <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
+                <div class="nav-container">
+                    <div class="nav-brand">
+                        <a href="/" class="brand-link" aria-label="Go to homepage">
+                            <span class="brand-name">James [Your Last Name]</span>
+                            <span class="brand-title">Applied Microeconomist</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-toggle" 
+                            type="button" 
+                            aria-controls="main-menu" 
+                            aria-expanded="false" 
+                            aria-label="Toggle navigation menu"
+                            onclick="toggleMobileMenu()">
+                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span>
+                        <span class="toggle-bar"></span>
+                    </button>
+                    
+                    <!-- Main Menu -->
+                    <div class="main-menu" id="main-menu">
+                        <ul class="nav-list" role="menubar">
+                            <li class="nav-item" role="none">
+                                <a href="/" class="nav-link active" role="menuitem">
+                                    <i class="fas fa-home" aria-hidden="true"></i>
+                                    <span class="nav-text">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="none">
+                                <a href="/about" class="nav-link" role="menuitem">
+                                    <i class="fas fa-user" aria-hidden="true"></i>
+                                    <span class="nav-text">About</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="none">
+                                <a href="/research" class="nav-link" role="menuitem">
+                                    <i class="fas fa-microscope" aria-hidden="true"></i>
+                                    <span class="nav-text">Research</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="none">
+                                <a href="/publications" class="nav-link" role="menuitem">
+                                    <i class="fas fa-book" aria-hidden="true"></i>
+                                    <span class="nav-text">Publications</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="none">
+                                <a href="/teaching" class="nav-link" role="menuitem">
+                                    <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
+                                    <span class="nav-text">Teaching</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="none">
+                                <a href="/contact" class="nav-link" role="menuitem">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    <span class="nav-text">Contact</span>
+                                </a>
+                            </li>
+                            
+                            <!-- Academic Quick Links -->
+                            <li class="nav-item nav-item-academic" role="none">
+                                <a href="/cv.pdf" 
+                                   class="nav-link nav-link-cv" 
+                                   role="menuitem"
+                                   target="_blank" 
+                                   rel="noopener noreferrer">
+                                    <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                                    <span class="nav-text">CV</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <!-- Main Content Container -->
+        <main class="main-content" id="main-content" role="main">
+            <div class="content-preview">
+                <h1>Your Academic Content Goes Here</h1>
+                <p>This is a preview of how your enhanced Ivy League-caliber header looks. The navigation is professional, accessible, and optimized for academic websites. Try resizing your browser to see the responsive mobile menu.</p>
+            </div>
+        </main>
+    </div>
 
-<body class="{{ post.title | downcase | replace:' ','-' | replace:',','' | strip_html }}{% if page.category %} category-{{ page.category }}{% endif %}{% if page.layout-class %} layout-{{ page.layout-class }}{% endif %}">
+    <script>
+        function toggleMobileMenu() {
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            const menu = document.querySelector('.main-menu');
+            const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+            
+            toggle.setAttribute('aria-expanded', !isExpanded);
+            menu.classList.toggle('active');
+        }
 
-<div class="main container" id="top">
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navigation = document.querySelector('.main-navigation');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            const menu = document.querySelector('.main-menu');
+            
+            if (!navigation.contains(event.target)) {
+                toggle.setAttribute('aria-expanded', 'false');
+                menu.classList.remove('active');
+            }
+        });
 
-  {% if site.enable_nav == true %}
-  <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="/">{{ site.admin_name }}</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-              {% for item in site.nav_item %}
-                <li>
-                  <a href="{{ item.url }}">{{ item.text }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-      </div>
-  </nav>
-  {% endif %}
+        // Handle keyboard navigation
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const toggle = document.querySelector('.mobile-menu-toggle');
+                const menu = document.querySelector('.main-menu');
+                toggle.setAttribute('aria-expanded', 'false');
+                menu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
