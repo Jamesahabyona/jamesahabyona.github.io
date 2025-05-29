@@ -1,460 +1,272 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recent Work Section Preview</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Source Sans Pro', sans-serif;
-            line-height: 1.6;
-            color: #343a40;
-            margin: 0;
-            padding: 0;
-        }
+<!-- ADD THIS CSS TO YOUR EXISTING STYLESHEET -->
+<style>
+/* Enhanced Research Section */
+.research {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+    overflow: hidden;
+}
 
-        /* Recent Work Section Enhancements */
-        #recent-work {
-            padding: 6rem 0;
-            background: linear-gradient(135deg, #fefdfb 0%, #f8f9fa 100%);
-            position: relative;
-            overflow: hidden;
-        }
+.research::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23c8aa6e" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+    animation: float-bg 20s ease-in-out infinite;
+    z-index: 0;
+}
 
-        #recent-work::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -50%;
-            width: 200%;
-            height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23c8aa6e" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
-            animation: float-bg 20s ease-in-out infinite;
-            z-index: 0;
-        }
+@keyframes float-bg {
+    0%, 100% { transform: translateX(0) translateY(0); }
+    25% { transform: translateX(-5px) translateY(-3px); }
+    50% { transform: translateX(3px) translateY(-5px); }
+    75% { transform: translateX(-3px) translateY(3px); }
+}
 
-        @keyframes float-bg {
-            0%, 100% { transform: translateX(0) translateY(0); }
-            25% { transform: translateX(-10px) translateY(-5px); }
-            50% { transform: translateX(5px) translateY(-10px); }
-            75% { transform: translateX(-5px) translateY(5px); }
-        }
+.research .container {
+    position: relative;
+    z-index: 2;
+}
 
-        .section-header {
-            text-align: center;
-            margin-bottom: 4rem;
-            position: relative;
-            z-index: 2;
-        }
+.research h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #1e3a5f;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
 
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            color: #1e3a5f;
-            margin-bottom: 1rem;
-            position: relative;
-            display: inline-block;
-        }
+.research h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #c8aa6e, #1e3a5f);
+    border-radius: 2px;
+}
 
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(90deg, #c8aa6e, #1e3a5f);
-            border-radius: 2px;
-        }
+/* Enhanced Research Cards */
+.research-areas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        .section-subtitle {
-            font-size: 1.2rem;
-            color: #6c757d;
-            max-width: 600px;
-            margin: 2rem auto 0;
-            line-height: 1.6;
-        }
+.research-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-top: 5px solid #c8aa6e;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideInUp 0.8s ease-out forwards;
+}
 
-        /* Enhanced Work Item Styling */
-        .work-item {
-            margin-bottom: 6rem;
-            position: relative;
-            z-index: 2;
-        }
+.research-card:nth-child(1) { animation-delay: 0.1s; }
+.research-card:nth-child(2) { animation-delay: 0.2s; }
+.research-card:nth-child(3) { animation-delay: 0.3s; }
+.research-card:nth-child(4) { animation-delay: 0.4s; }
+.research-card:nth-child(5) { animation-delay: 0.5s; }
+.research-card:nth-child(6) { animation-delay: 0.6s; }
 
-        .work-item:last-child {
-            margin-bottom: 3rem;
-        }
+@keyframes slideInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-        .work-item .row {
-            align-items: center;
-            min-height: 400px;
-        }
+.research-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(200, 170, 110, 0.1), transparent);
+    transition: left 0.6s ease;
+}
 
-        .work-content {
-            padding: 3rem;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-            position: relative;
-            overflow: hidden;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
+.research-card:hover::before {
+    left: 100%;
+}
 
-        .work-content::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(200, 170, 110, 0.1), transparent);
-            transition: left 0.5s ease;
-        }
+.research-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+    border-top-color: #1e3a5f;
+}
 
-        .work-content:hover::before {
-            left: 100%;
-        }
+.research-card i {
+    font-size: 3.5rem;
+    color: #1e3a5f;
+    margin-bottom: 1.5rem;
+    display: block;
+    transition: all 0.3s ease;
+}
 
-        .work-content:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-        }
+.research-card:hover i {
+    color: #c8aa6e;
+    transform: scale(1.1);
+}
 
-        .work-content h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            color: #1e3a5f;
-            margin-bottom: 1rem;
-        }
+.research-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #1e3a5f;
+    margin-bottom: 1.25rem;
+    line-height: 1.3;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
 
-        .work-content p {
-            color: #6c757d;
-            line-height: 1.7;
-            margin-bottom: 1.5rem;
-        }
+.research-card:hover h3 {
+    color: #c8aa6e;
+}
 
-        .work-meta {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1rem;
-        }
+.research-card p {
+    color: #6c757d;
+    line-height: 1.7;
+    font-size: 1rem;
+    margin: 0;
+}
 
-        .work-tag {
-            background: #f8f9fa;
-            color: #1e3a5f;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .research-areas {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
 
-        .work-link {
-            color: #c8aa6e;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
+@media (max-width: 768px) {
+    .research {
+        padding: 4rem 0;
+    }
+    
+    .research h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .research-areas {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .research-card {
+        padding: 2rem;
+    }
+    
+    .research-card i {
+        font-size: 3rem;
+    }
+    
+    .research-card h3 {
+        font-size: 1.4rem;
+    }
+}
 
-        .work-link:hover {
-            color: #1e3a5f;
-        }
+@media (max-width: 480px) {
+    .research h2 {
+        font-size: 2rem;
+    }
+    
+    .research-card {
+        padding: 1.5rem;
+    }
+    
+    .research-card i {
+        font-size: 2.5rem;
+    }
+    
+    .research-card h3 {
+        font-size: 1.3rem;
+    }
+}
+</style>
 
-        .work-image {
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 15px 50px rgba(0,0,0,0.2);
-            transition: all 0.4s ease;
-            position: relative;
-        }
-
-        .work-image::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(30, 58, 95, 0.8), rgba(200, 170, 110, 0.6));
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .work-image:hover::after {
-            opacity: 1;
-        }
-
-        .work-image img {
-            width: 100%;
-            height: auto;
-            transition: transform 0.4s ease;
-        }
-
-        .work-image:hover img {
-            transform: scale(1.05);
-        }
-
-        /* Work Item Animations */
-        .slide-up {
-            opacity: 0;
-            transform: translateY(60px);
-            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        .slide-up.animate {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .slide-left {
-            opacity: 0;
-            transform: translateX(-60px);
-            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        .slide-left.animate {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .slide-right {
-            opacity: 0;
-            transform: translateX(60px);
-            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        .slide-right.animate {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .fade-scale {
-            opacity: 0;
-            transform: scale(0.8);
-            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        .fade-scale.animate {
-            opacity: 1;
-            transform: scale(1);
-        }
-
-        /* Enhanced Pagination */
-        .pagination-wrapper {
-            text-align: center;
-            margin-top: 4rem;
-            position: relative;
-            z-index: 2;
-        }
-
-        .pagination {
-            display: inline-flex;
-            background: white;
-            border-radius: 50px;
-            padding: 0.5rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            list-style: none;
-            margin: 0;
-        }
-
-        .pagination:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-        }
-
-        .pagination li {
-            margin: 0 0.3rem;
-        }
-
-        .pagination a {
-            display: block;
-            padding: 0.75rem 1rem;
-            color: #6c757d;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-        }
-
-        .pagination a:hover,
-        .pagination .active a {
-            background: #1e3a5f;
-            color: white;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            #recent-work {
-                padding: 4rem 0;
-            }
+<!-- REPLACE YOUR EXISTING RESEARCH SECTION WITH THIS -->
+<section class="research" id="research">
+    <div class="container">
+        <h2>Recent Work</h2>
+        <div class="research-areas">
+            <div class="research-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile Money & Financial Inclusion</h3>
+                <p>Examining the adoption patterns and economic impacts of mobile financial services across African markets, with particular focus on behavioral determinants and policy implications.</p>
+            </div>
             
-            .section-title {
-                font-size: 2.5rem;
-            }
+            <div class="research-card">
+                <i class="fas fa-gem"></i>
+                <h3>Artisanal Mining Economics</h3>
+                <p>Analyzing the socioeconomic dynamics of small-scale mining operations and their role in local development and livelihoods across sub-Saharan Africa.</p>
+            </div>
             
-            .work-content {
-                padding: 2rem;
-                margin-bottom: 2rem;
-            }
+            <div class="research-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Higher Education Policy</h3>
+                <p>Investigating the effectiveness of higher education policies and their impact on human capital development and economic outcomes in developing contexts.</p>
+            </div>
             
-            .work-item {
-                margin-bottom: 4rem;
-            }
+            <div class="research-card">
+                <i class="fas fa-sitemap"></i>
+                <h3>Decentralization & Governance</h3>
+                <p>Studying the effects of administrative and fiscal decentralization on public service delivery and local economic development outcomes.</p>
+            </div>
             
-            .work-item .row {
-                min-height: auto;
-            }
-        }
-
-        /* Demo Animation Trigger */
-        .demo-animate {
-            animation: slideInUp 0.8s ease-out forwards;
-        }
-
-        @keyframes slideInUp {
-            from {
-                opacity: 0;
-                transform: translateY(60px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-</head>
-<body>
-    <main id="recent-work" role="main">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- Enhanced Section Header -->
-                    <div class="section-header slide-up demo-animate">
-                        <h2 class="section-title">Recent Work</h2>
-                        <p class="section-subtitle">Exploring innovative approaches to development economics through cutting-edge research and data analysis</p>
-                    </div>
-
-                    <!-- Sample Work Item 1 - Left Layout -->
-                    <article class="work-item slide-left demo-animate" style="animation-delay: 0.2s;">
-                        <div class="row">
-                            <div class="col-md-6 col-lg-7">
-                                <div class="work-content">
-                                    <div class="work-meta">
-                                        <span class="work-tag">Mobile Money</span>
-                                        <span class="work-tag">Financial Inclusion</span>
-                                    </div>
-                                    <h3>Mobile Money Adoption in Rural Uganda</h3>
-                                    <p>A comprehensive study examining the behavioral determinants and economic impacts of mobile financial services in rural communities. This research utilizes experimental data from over 2,000 households to understand adoption patterns and their implications for financial inclusion.</p>
-                                    <a href="#" class="work-link">Read More <i class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-5">
-                                <div class="work-image fade-scale demo-animate" style="animation-delay: 0.4s;">
-                                    <img src="https://images.unsplash.com/photo-1556742049-041a5b4e90c6?w=500&h=300&fit=crop" alt="Mobile Money Research" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Sample Work Item 2 - Right Layout -->
-                    <article class="work-item slide-right demo-animate" style="animation-delay: 0.6s;">
-                        <div class="row">
-                            <div class="col-md-6 col-lg-5 order-md-1">
-                                <div class="work-image fade-scale demo-animate" style="animation-delay: 0.8s;">
-                                    <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=500&h=300&fit=crop" alt="Mining Economics" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-7 order-md-2">
-                                <div class="work-content">
-                                    <div class="work-meta">
-                                        <span class="work-tag">Mining Economics</span>
-                                        <span class="work-tag">Development</span>
-                                    </div>
-                                    <h3>Artisanal Mining and Local Development</h3>
-                                    <p>An in-depth analysis of small-scale mining operations and their socioeconomic impact on local communities across sub-Saharan Africa. This study combines GIS data with household surveys to map the relationship between mining activities and regional development.</p>
-                                    <a href="#" class="work-link">Read More <i class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Sample Work Item 3 - Left Layout -->
-                    <article class="work-item fade-scale demo-animate" style="animation-delay: 1.0s;">
-                        <div class="row">
-                            <div class="col-md-6 col-lg-7">
-                                <div class="work-content">
-                                    <div class="work-meta">
-                                        <span class="work-tag">Education Policy</span>
-                                        <span class="work-tag">Human Capital</span>
-                                    </div>
-                                    <h3>Higher Education Policy Impact Analysis</h3>
-                                    <p>Evaluating the effectiveness of higher education policies on human capital development and labor market outcomes in developing countries. This research utilizes administrative data and text analysis of policy documents to assess implementation success.</p>
-                                    <a href="#" class="work-link">Read More <i class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-5">
-                                <div class="work-image slide-up demo-animate" style="animation-delay: 1.2s;">
-                                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9d1?w=500&h=300&fit=crop" alt="Education Policy" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Enhanced Pagination -->
-                    <div class="pagination-wrapper slide-up demo-animate" style="animation-delay: 1.4s;">
-                        <ul class="pagination">
-                            <li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="research-card">
+                <i class="fas fa-child"></i>
+                <h3>Early-Life Circumstances</h3>
+                <p>Exploring how early childhood conditions and interventions influence long-term economic and social outcomes using longitudinal data approaches.</p>
+            </div>
+            
+            <div class="research-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Non-Conventional Data Methods</h3>
+                <p>Pioneering the use of text analysis, historical maps, satellite imagery, and GIS data to address traditional development economics questions with fresh methodological approaches.</p>
             </div>
         </div>
-    </main>
+    </div>
+</section>
 
-    <script>
-        // Demo: Trigger animations on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            setTimeout(() => {
-                document.querySelectorAll('.demo-animate').forEach((element, index) => {
-                    setTimeout(() => {
-                        element.classList.add('animate');
-                    }, index * 200);
-                });
-            }, 500);
+<!-- OPTIONAL: ADD THIS JAVASCRIPT BEFORE CLOSING </body> TAG FOR SCROLL ANIMATIONS -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Intersection Observer for scroll-triggered animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
 
-            // Intersection Observer for scroll animations (in real implementation)
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-
-            const observer = new IntersectionObserver(function(entries) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate');
-                    }
-                });
-            }, observerOptions);
-
-            // Enhanced hover effects
-            document.querySelectorAll('.work-content').forEach(content => {
-                content.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-10px) scale(1.02)';
-                });
-                
-                content.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0) scale(1)';
-                });
-            });
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animationPlayState = 'running';
+            }
         });
-    </script>
-</body>
-</html>
+    }, observerOptions);
+
+    // Observe research cards
+    document.querySelectorAll('.research-card').forEach(card => {
+        card.style.animationPlayState = 'paused';
+        observer.observe(card);
+    });
+});
+</script>
