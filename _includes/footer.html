@@ -1,135 +1,183 @@
-
-  
 <style>
-  .quick-links-container {
-    background-color: #f2f2f2;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  }
-
-  .quick-links-container p {
-    margin: 0;
-    padding: 0;
-  }
-
-  .quick-links-container a {
-    color: #007bff; /* Blue link color */
-    text-decoration: none; /* Remove underline from all links */
-  }
-
-  .quick-links-container a:hover {
-    color: #0056b3; /* Darker blue link color on hover */
-    text-decoration: underline; /* Add underline on hover for all links */
-  }
-
-  #links-title {
-    color: black;
-    font-weight: bold ;
-    font-size: 16px;
-  }
-
-
-  #footer-links > a {
-    display: inline-block;
-    margin: 10px;
-    text-decoration: underline; 
-    font-weight: bold ;
+  .site-footer {
+    background-color: #f8f9fa;
+    padding: 3rem 0 2rem;
+    border-top: 1px solid #e9ecef;
+    margin-top: 3rem;
   }
   
+  .footer-content {
+    text-align: center;
+  }
+  
+  .contact-info h4 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+  }
+  
+  .contact-info p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-email {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .contact-email:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  .social-links {
+    margin: 2rem 0;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #666;
+    font-size: 1.8rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #007bff;
+    transform: translateY(-2px);
+  }
+  
+  .quick-links {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    display: inline-block;
+  }
+  
+  .quick-links h5 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .quick-links a {
+    display: inline-block;
+    margin: 0 15px 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .quick-links a:hover {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #e9ecef;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .back-to-top {
+    color: #666;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .back-to-top:hover {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-bottom {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+    
+    .quick-links a {
+      display: block;
+      margin: 5px 0;
+    }
+  }
 </style>
 
 <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-               <div class="col-md-2"></div>
-      <div class="col-md-8 text-center">
-
-        <h4><strong><i class="address-card.png"></i>  Contact information</strong></h4>
-        </h4>
-
-        <p style="color: black;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="footer-content">
           
-          Nova School of Business and Economics<br>
-          
-          Rua da Holanda 1, 2775-405 Carcavelos<br>
-          
-          Lisbon, Portugal<br>
-          
-        </p>
-
-        <ul class="list-unstyled">
-          <li><i class="fa fa-envelope fa-fw"></i> jemo44t [at] gmail [dot] com or  52769 [at] novasbe [dot] pt
-          </li>
-        </ul>
-
-        <br>
-
-        <ul class="list-inline">
-          <li>
-            <a id="icon" href="" target="_blank"><i class="fa fa-user fa-fw fa-2x"></i></a>
-          </li>
-          <li>
-            <a id="icon" href="https://github.com/jamesahabyona" target="_blank"><i class="fa fa-github fa-fw fa-2x"></i></a>
-          </li>
-          <li>
-            <a id="icon" href="https://twitter.com/a_ha256" target="_blank"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-          </li>
-          <li>
-            <a id="icon" href="https://www.linkedin.com/in/james-ahabyona-236b81129/" target="_blank"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-          </li>
-        </ul>
-
-
-  <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-624df6823b479911207c47e6" style="text-align: center;">
-    <div class="sqs-block-content">
-
-      <div class="sqs-html-content">
-        <p id="links-title">QUICK LINKS</p>
-        <p id="footer-links">
-          <a href="/">Home</a>
-          <a href="/Research">Research</a>
-          <a href="/About">About</a>
-        </p>
-      </div>
-
-    </div>
-  </div>
-
-        <hr>
-            <p class="text-muted text-left "><a href="{{ site.url }}">{{ site.footer_text }}</a></p>
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <h4><i class="fa fa-address-card"></i> Contact Information</h4>
+            <p>
+              Nova School of Business and Economics<br>
+              Rua da Holanda 1, 2775-405 Carcavelos<br>
+              Lisbon, Portugal
+            </p>
+            <p>
+              <i class="fa fa-envelope"></i> 
+              <a href="mailto:jemo44t@gmail.com" class="contact-email">jemo44t@gmail.com</a> 
+              or 
+              <a href="mailto:52769@novasbe.pt" class="contact-email">52769@novasbe.pt</a>
+            </p>
           </div>
 
-          <div class="col-xs-12 col-md-6 col-md-offset-2">
-            <a class="section-jump" href="#top">
-              <i class="fa fa-angle-up fa-3x"></i>
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="/cv" target="_blank" aria-label="CV" title="Download CV">
+              <i class="fa fa-file-pdf-o"></i>
+            </a>
+            <a href="https://github.com/jamesahabyona" target="_blank" aria-label="GitHub" title="GitHub Profile">
+              <i class="fa fa-github"></i>
+            </a>
+            <a href="https://twitter.com/a_ha256" target="_blank" aria-label="Twitter" title="Twitter Profile">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/james-ahabyona-236b81129/" target="_blank" aria-label="LinkedIn" title="LinkedIn Profile">
+              <i class="fa fa-linkedin"></i>
             </a>
           </div>
+
+          <!-- Quick Links -->
+          <div class="quick-links">
+            <h5>Quick Links</h5>
+            <div>
+              <a href="/">Home</a>
+              <a href="/Research">Research</a>
+              <a href="/About">About</a>
+              <a href="/Contact">Contact</a>
+            </div>
+          </div>
+
+          <!-- Footer Bottom -->
+          <div class="footer-bottom">
+            <p class="text-muted">
+              © 2024 James [Your Last Name]. All rights reserved.
+            </p>
+            <a href="#top" class="back-to-top" aria-label="Back to top">
+              <i class="fa fa-angle-up"></i>
+            </a>
+          </div>
+
         </div>
-        <div class="fe-block fe-block-624df6823b479911207c47e6">
-</div>
-
-
-    </footer>
-  </div><!-- .main.container -->
-
-    <!-- JavaScript -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="{{ site.url }}/js/wow.min.js"></script>
-    <script src="{{ site.url }}/js/app.js"></script>
-
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', ' {{ site.google_analytics }}', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-
-    </body>
-</html>
+      </div>
+    </div>
+  </div>
+</footer>
