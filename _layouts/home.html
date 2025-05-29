@@ -1,28 +1,226 @@
+{% include header.html %}
 {% include home-hero.html %}
-    <main id="recent work">
-      <div class="container">
+
+<!-- Add this CSS for proper positioning and styling -->
+<style>
+/* Recent Work Section Styling */
+#recent-work {
+    padding: 6rem 0;
+    background: #f8f9fa;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1e3a5f;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #c8aa6e;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 4rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Work Item Styling */
+.work-item {
+    margin-bottom: 5rem;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.work-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.work-item:last-child {
+    margin-bottom: 2rem;
+}
+
+/* Content positioning for left/right layouts */
+.work-content {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.work-image {
+    padding: 0;
+    overflow: hidden;
+}
+
+.work-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.work-item:hover .work-image img {
+    transform: scale(1.05);
+}
+
+/* Typography within work items */
+.work-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1e3a5f;
+    margin-bottom: 1rem;
+}
+
+.work-content p {
+    color: #6c757d;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.work-content a {
+    color: #c8aa6e;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.work-content a:hover {
+    color: #1e3a5f;
+}
+
+/* Animation classes */
+.fadeIn {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fadeIn.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #recent-work {
+        padding: 4rem 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .work-content {
+        padding: 2rem;
+        min-height: auto;
+    }
+    
+    .work-image img {
+        height: 250px;
+    }
+    
+    .work-item {
+        margin-bottom: 3rem;
+    }
+}
+</style>
+
+<main id="recent-work">
+    <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <!--  <h2 class="section-title text-center">Recent work</h2>
-            <!-- {% if site.section_title != '' %}
-            <h2 class="section-title text-center">{{ site.section_title }}</h2>
-            {% endif %}
-            {% if site.section_subtitle != '' %}
-            <p class="section-subtitle text-center">{{ site.section_subtitle }}</p>
-            {% endif %} -->
-            {% for post in paginator.posts %}
-              <div class="wow fadeIn">
-              {% if post.position == "left" %}
-                {% include content-left.html %}
-              {% endif %}
-              {% if post.position == "right" %}
-                {% include content-right.html %}
-              {% endif %}
-              </div>
-            {% endfor %}
-            {% include pagination.html %}
-          </div>
+            <div class="col-md-12">
+                <!-- Section Header -->
+                <h2 class="section-title text-center">Recent Work</h2>
+                <p class="section-subtitle text-center">Exploring innovative approaches to development economics through cutting-edge research and data analysis</p>
+                
+                <!-- Work Items -->
+                {% for post in paginator.posts %}
+                    <div class="work-item wow fadeIn" data-wow-duration="0.6s" data-wow-delay="{{ forloop.index | times: 0.1 }}s">
+                        {% if post.position == "left" %}
+                            <div class="row no-gutters">
+                                <div class="col-md-7">
+                                    <div class="work-content">
+                                        {% include content-left.html %}
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="work-image">
+                                        {% if post.image %}
+                                            <img class="img-fluid" src="{{ post.image }}" title="{{ post.title }}" alt="{{ post.title }}">
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                        
+                        {% if post.position == "right" %}
+                            <div class="row no-gutters">
+                                <div class="col-md-5">
+                                    <div class="work-image">
+                                        {% if post.image %}
+                                            <img class="img-fluid" src="{{ post.image }}" title="{{ post.title }}" alt="{{ post.title }}">
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="work-content">
+                                        {% include content-right.html %}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+                
+                <!-- Pagination -->
+                <div class="text-center">
+                    {% include pagination.html %}
+                </div>
+            </div>
         </div>
-      </div>
-    </main>
+    </div>
+</main>
+
+<!-- Animation Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Intersection Observer for animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            }
+        });
+    }, observerOptions);
+
+    // Observe all fadeIn elements
+    document.querySelectorAll('.fadeIn').forEach(element => {
+        observer.observe(element);
+    });
+});
+</script>
+
 {% include footer.html %}
