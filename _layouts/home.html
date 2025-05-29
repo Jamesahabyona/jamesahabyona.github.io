@@ -1,226 +1,267 @@
-{% include header.html %}
-{% include home-hero.html %}
-
-<!-- Add this CSS for proper positioning and styling -->
-<style>
-/* Recent Work Section Styling */
-#recent-work {
-    padding: 6rem 0;
-    background: #f8f9fa;
-}
-
-.section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: #1e3a5f;
-    margin-bottom: 3rem;
-    position: relative;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background: #c8aa6e;
-}
-
-.section-subtitle {
-    font-size: 1.1rem;
-    color: #6c757d;
-    margin-bottom: 4rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Work Item Styling */
-.work-item {
-    margin-bottom: 5rem;
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-}
-
-.work-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-}
-
-.work-item:last-child {
-    margin-bottom: 2rem;
-}
-
-/* Content positioning for left/right layouts */
-.work-content {
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 300px;
-}
-
-.work-image {
-    padding: 0;
-    overflow: hidden;
-}
-
-.work-image img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.work-item:hover .work-image img {
-    transform: scale(1.05);
-}
-
-/* Typography within work items */
-.work-content h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    color: #1e3a5f;
-    margin-bottom: 1rem;
-}
-
-.work-content p {
-    color: #6c757d;
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
-}
-
-.work-content a {
-    color: #c8aa6e;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.work-content a:hover {
-    color: #1e3a5f;
-}
-
-/* Animation classes */
-.fadeIn {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease;
-}
-
-.fadeIn.animate {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    #recent-work {
-        padding: 4rem 0;
-    }
-    
-    .section-title {
-        font-size: 2rem;
-    }
-    
-    .work-content {
-        padding: 2rem;
-        min-height: auto;
-    }
-    
-    .work-image img {
-        height: 250px;
-    }
-    
-    .work-item {
-        margin-bottom: 3rem;
-    }
-}
-</style>
-
-<main id="recent-work">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <!-- Section Header -->
-                <h2 class="section-title text-center">Recent Work</h2>
-                <p class="section-subtitle text-center">Exploring innovative approaches to development economics through cutting-edge research and data analysis</p>
-                
-                <!-- Work Items -->
-                {% for post in paginator.posts %}
-                    <div class="work-item wow fadeIn" data-wow-duration="0.6s" data-wow-delay="{{ forloop.index | times: 0.1 }}s">
-                        {% if post.position == "left" %}
-                            <div class="row no-gutters">
-                                <div class="col-md-7">
-                                    <div class="work-content">
-                                        {% include content-left.html %}
-                                    </div>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="work-image">
-                                        {% if post.image %}
-                                            <img class="img-fluid" src="{{ post.image }}" title="{{ post.title }}" alt="{{ post.title }}">
-                                        {% endif %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Layout Preview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Source Sans Pro', sans-serif; margin: 0; padding: 20px 0; background: #fefefe; }
+        
+        #recent-work { padding: 4rem 0; background: #fefefe; }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #1e3a5f;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: #c8aa6e;
+        }
+        
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #6c757d;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .research-item {
+            margin-bottom: 4rem;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
+        }
+        
+        .research-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .research-image {
+            padding: 1.5rem;
+            background: #fafafa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 280px;
+        }
+        
+        .research-image img {
+            max-width: 100%;
+            max-height: 250px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .research-item:hover .research-image img {
+            transform: scale(1.02);
+        }
+        
+        .content {
+            padding: 2.5rem;
+        }
+        
+        .content .title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+            font-weight: 600;
+        }
+        
+        .content .excerpt {
+            color: #6c757d;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+        
+        .project-link {
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+        
+        .project-link .btn {
+            background: #f8f9fa;
+            color: #1e3a5f;
+            border: 1px solid #e9ecef;
+            padding: 0.7rem 1.5rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .project-link .btn:hover {
+            background: #1e3a5f;
+            color: white;
+            border-color: #1e3a5f;
+            transform: translateY(-1px);
+            text-decoration: none;
+        }
+        
+        .project-link .btn i {
+            margin-right: 0.5rem;
+        }
+        
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .tags span {
+            background: #e9ecef;
+            color: #6c757d;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            .research-image {
+                padding: 1rem;
+                min-height: 220px;
+            }
+            .research-image img {
+                max-height: 200px;
+            }
+            .content {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main id="recent-work">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-title text-center">Recent Work</h2>
+                    <p class="section-subtitle text-center">Exploring innovative approaches to development economics through cutting-edge research and data analysis</p>
+                    
+                    <!-- Sample Item 1 - Left Layout -->
+                    <div class="research-item">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-md-7">
+                                <div class="content">
+                                    <h3 class="title">Artisanal Mines and Women Empowerment</h3>
+                                    <p class="excerpt">Draft coming soon</p>
+                                    
+                                    <a href="#" class="project-link">
+                                        <button class="btn btn-default btn-lg">
+                                            <i class="fa fa-flask fa-lg"></i>
+                                            Download here
+                                        </button>
+                                    </a>
+                                    
+                                    <div class="tags">
+                                        <span>Women Empowerment</span>
+                                        <span>Artisanal Mines</span>
+                                        <span>Africa</span>
                                     </div>
                                 </div>
                             </div>
-                        {% endif %}
-                        
-                        {% if post.position == "right" %}
-                            <div class="row no-gutters">
-                                <div class="col-md-5">
-                                    <div class="work-image">
-                                        {% if post.image %}
-                                            <img class="img-fluid" src="{{ post.image }}" title="{{ post.title }}" alt="{{ post.title }}">
-                                        {% endif %}
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <div class="work-content">
-                                        {% include content-right.html %}
-                                    </div>
+                            <div class="col-md-5">
+                                <div class="research-image">
+                                    <img src="https://via.placeholder.com/400x300/4CAF50/ffffff?text=Africa+Mining+Map" alt="Artisanal Mines Map">
                                 </div>
                             </div>
-                        {% endif %}
+                        </div>
                     </div>
-                {% endfor %}
-                
-                <!-- Pagination -->
-                <div class="text-center">
-                    {% include pagination.html %}
+                    
+                    <!-- Sample Item 2 - Right Layout -->
+                    <div class="research-item">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-md-5">
+                                <div class="research-image">
+                                    <img src="https://via.placeholder.com/400x300/FF9800/ffffff?text=Child+Labour+Uganda" alt="Child Labour Uganda">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="content">
+                                    <h3 class="title">Child labour in Uganda: An annotated bibliography</h3>
+                                    <p class="excerpt">We provide a comprehensive overview of child labour in Uganda, offering insights into its causes, consequences, and potential solutions.</p>
+                                    
+                                    <a href="#" class="project-link">
+                                        <button class="btn btn-default btn-lg">
+                                            <i class="fa fa-flask fa-lg"></i>
+                                            Download here
+                                        </button>
+                                    </a>
+                                    
+                                    <div class="tags">
+                                        <span>Child</span>
+                                        <span>Labour</span>
+                                        <span>Development</span>
+                                        <span>Africa</span>
+                                        <span>Uganda</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sample Item 3 - Left Layout -->
+                    <div class="research-item">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-md-7">
+                                <div class="content">
+                                    <h3 class="title">Can Games measure mobile money adoption? Evidence from Mozambique</h3>
+                                    <p class="excerpt">I combine tools from behavioral economics and mobile money transaction data to test a novel method for measuring mobile money adoption.</p>
+                                    
+                                    <a href="#" class="project-link">
+                                        <button class="btn btn-default btn-lg">
+                                            <i class="fa fa-flask fa-lg"></i>
+                                            Available on request
+                                        </button>
+                                    </a>
+                                    
+                                    <div class="tags">
+                                        <span>Mobile Money</span>
+                                        <span>Technology Adoption</span>
+                                        <span>Behavioral Games</span>
+                                        <span>Measurements</span>
+                                        <span>Mozambique</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="research-image">
+                                    <img src="https://via.placeholder.com/400x300/2196F3/ffffff?text=Mobile+Money+Shop" alt="Mobile Money Mozambique">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
-
-<!-- Animation Script -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Intersection Observer for animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate');
-            }
-        });
-    }, observerOptions);
-
-    // Observe all fadeIn elements
-    document.querySelectorAll('.fadeIn').forEach(element => {
-        observer.observe(element);
-    });
-});
-</script>
-
-{% include footer.html %}
+    </main>
+</body>
+</html>
