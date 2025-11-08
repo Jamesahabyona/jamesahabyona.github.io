@@ -209,111 +209,49 @@
             color: var(--dark-gray);
             font-weight: 400;
         }
-      /* Education & News Container Styles */
-.education-news-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    margin-bottom: 50px;
-    background: rgba(255,255,255,0.95);
-    border-radius: 15px;
-    padding: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    backdrop-filter: blur(10px);
-}
-
-.education-column, .news-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.section-header {
-    margin-bottom: 30px;
-}
-
-.section-header h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    color: #1e3a5f;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin: 0;
-}
-
-.section-header h2::before {
-    content: '';
-    display: inline-block;
-    width: 4px;
-    height: 30px;
-    background: #c8aa6e;
-    border-radius: 2px;
-}
-
-.education-item {
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-    border-left: 4px solid #1e3a5f;
-    padding-left: 20px;
-}
-
-.education-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.education-item h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
-    color: #1e3a5f;
-    margin-bottom: 5px;
-    font-weight: 600;
-}
-
-.education-item .institution {
-    color: #6c757d;
-    font-size: 0.95rem;
-    margin: 0;
-}
-
-/* News Items List */
-.news-items-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.news-item-compact {
-    padding: 15px;
-    border-left: 4px solid #667eea;
-    background: #f8f9fa;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-}
-
-.news-item-compact:hover {
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.15);
-    transform: translateX(5px);
-}
-
-.news-date-compact {
-    display: inline-block;
-    background: #667eea;
-    color: white;
-    padding: 4px 10px;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.news-item-compact p {
-    color: #2c3e50;
-    line-height: 1.6;
-    font-size: 0.9rem;
-    margin: 8px 0 0 0;
-}
+      .education-highlight h4 {
+            color: var(--primary-navy);
+            margin-bottom: 1rem;
+            font-family: 'Crimson Text', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+       
+        .education-highlight ul {
+            list-style: none;
+            padding: 0;
+        }
+       
+        .education-highlight li {
+            margin-bottom: 1.2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+       
+        .education-highlight li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+       
+        .education-highlight .degree {
+            font-weight: 500;
+            color: var(--primary-navy);
+            margin-bottom: 0.3rem;
+        }
+       
+        .education-highlight .institution {
+            color: var(--medium-gray);
+            font-size: 0.95rem;
+        }
+       
+        .education-highlight .institution a {
+            color: var(--primary-navy);
+            text-decoration: none;
+        }
+       
+        .education-highlight .institution a:hover {
+            text-decoration: underline;
+        }
         
         .profile-image img:hover {
             transform: scale(1.02);
