@@ -209,120 +209,56 @@
             color: var(--dark-gray);
             font-weight: 400;
         }
-        /* Education & News Container Styles */
-.education-news-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    margin-bottom: 50px;
-    background: rgba(255,255,255,0.95);
-    border-radius: 15px;
-    padding: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    backdrop-filter: blur(10px);
-}
+       <!-- EDUCATION SECTION WITH NEWS -->
+<section class="education-news-container">
+    <!-- Education Column -->
+    <div class="education-column">
+        <div class="section-header">
+            <h2>Education</h2>
+        </div>
+        <div class="education-item">
+            <h3>Master's in Economics</h3>
+            <p class="institution">Nova School of Business and Economics, Portugal</p>
+        </div>
+        <div class="education-item">
+            <h3>BA in Development Economics</h3>
+            <p class="institution">Makerere University Kampala, Uganda</p>
+        </div>
+    </div>
 
-.education-column, .news-column {
-    display: flex;
-    flex-direction: column;
-}
+    <!-- News Column -->
+    <div class="news-column">
+        <div class="section-header">
+            <h2>Latest News & Updates</h2>
+        </div>
+        <div class="news-items-list">
+            <div class="news-item-compact">
+                <span class="news-date-compact">Jan. 2026</span>
+                <p>My work on the returns to college in Uganda will be presented at ASSA.</p>
+            </div>
 
-.section-header {
-    margin-bottom: 30px;
-}
+            <div class="news-item-compact">
+                <span class="news-date-compact">Nov. 2025</span>
+                <p>I will give seminars at Brown University and Wellesley College.</p>
+            </div>
 
-.section-header h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    color: #1e3a5f;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin: 0;
-}
+            <div class="news-item-compact">
+                <span class="news-date-compact">Oct. 2025</span>
+                <p>I will give seminars at University of Galway, Trinity College Dublin, and University College Dublin.</p>
+            </div>
 
-.section-header h2::before {
-    content: '';
-    display: inline-block;
-    width: 4px;
-    height: 30px;
-    background: #c8aa6e;
-    border-radius: 2px;
-}
+            <div class="news-item-compact">
+                <span class="news-date-compact">Sep. 2025</span>
+                <p>I will present my work on the political economy of internal migration at the 18th AFD-World Bank Migration and Development Conference held at Paris School of Economics.</p>
+            </div>
 
-.education-item {
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-    border-left: 4px solid #1e3a5f;
-    padding-left: 20px;
-}
-
-.education-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.education-item h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
-    color: #1e3a5f;
-    margin-bottom: 5px;
-    font-weight: 600;
-}
-
-.education-item .institution {
-    color: #6c757d;
-    font-size: 0.95rem;
-    margin: 0;
-}
-
-/* News Items List */
-.news-items-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.news-item-compact {
-    padding: 15px;
-    border-left: 4px solid #667eea;
-    background: #f8f9fa;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-}
-
-.news-item-compact:hover {
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.15);
-    transform: translateX(5px);
-}
-
-.news-date-compact {
-    display: inline-block;
-    background: #667eea;
-    color: white;
-    padding: 4px 10px;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.news-item-compact p {
-    color: #2c3e50;
-    line-height: 1.6;
-    font-size: 0.9rem;
-    margin: 8px 0 0 0;
-}
-        .education-highlight {
-            background: var(--light-gray);
-            padding: 1.8rem;
-            border-radius: 4px;
-            border-left: 3px solid var(--primary-navy);
-            margin: 2rem 0;
-        }
-        
-       
+            <div class="news-item-compact">
+                <span class="news-date-compact">Jun. 2025</span>
+                <p>I presented my work on the electoral impacts of school reform at the Barcelona Summer Forum workshop in Public Economics, and on the political economy of internal migration at the BSF Migration workshop.</p>
+            </div>
+        </div>
+    </div>
+</section>
         
         .profile-image {
             text-align: center;
