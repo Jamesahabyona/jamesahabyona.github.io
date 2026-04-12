@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="James Ahabyona is an applied microeconomist and research assistant specializing in survey design, impact evaluation, and data analysis across Africa, MENA, and Europe.">
+  <title>James Ahabyona | Applied Microeconomist</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVMC4NM35Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FVMC4NM35Q');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #163a63;
+      --primary-strong: #102a47;
+      --accent: #c8aa6e;
+      --text: #233142;
+      --muted: #5b6776;
+      --border: #dde4ec;
+      --surface: #ffffff;
+      --surface-alt: #f7f9fc;
+      --max-width: 1100px;
+      --radius: 14px;
+      --shadow: 0 12px 30px rgba(16, 42, 71, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Source Sans Pro', sans-serif;
+      color: var(--text);
+      background: #fcfdff;
+      line-height: 1.65;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: var(--primary); }
+
+    .skip-link {
+      position: absolute;
+      left: 1rem;
+      top: -4rem;
+      background: var(--primary);
+      color: #fff;
+      padding: 0.75rem 1rem;
+      border-radius: 0 0 10px 10px;
+      z-index: 1000;
+      text-decoration: none;
+    }
+    .skip-link:focus { top: 0; }
+
+    .container {
+      width: min(var(--max-width), calc(100% - 2rem));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 72px;
+    }
+
+    .brand {
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .brand strong {
+      display: block;
+      font-family: 'Crimson Text', serif;
+      font-size: 1.55rem;
+      line-height: 1.1;
+    }
+    .brand span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .nav-toggle {
+      display: none;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--primary);
+      border-radius: 10px;
+      padding: 0.6rem 0.8rem;
+      cursor: pointer;
+    }
+
+    .nav-list {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-list a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+    }
+    .nav-list a:hover,
+    .nav-list a:focus-visible {
+      background: var(--surface-alt);
+      color: var(--primary);
+      outline: none;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary-strong), var(--primary));
+      color: #fff;
+      padding: 5.5rem 0 4.5rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.45fr 0.95fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: #f2dfb4;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin: 0 0 1rem;
+      font-family: 'Crimson Text', serif;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      line-height: 1.05;
+    }
+
+    .hero p {
+      margin: 0 0 1.4rem;
+      max-width: 40rem;
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .hero-highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin: 1.2rem 0 1.7rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .hero-highlights li {
+      padding: 0.55rem 0.9rem;
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-top: 1.2rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      min-height: 48px;
+      padding: 0 1.1rem;
+      border: 1px solid transparent;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .button-primary {
+      background: var(--accent);
+      color: #1f2430;
+    }
+    .button-primary:hover { transform: translateY(-1px); }
+
+    .button-secondary {
+      border-color: rgba(255,255,255,0.22);
+      color: #fff;
+      background: rgba(255,255,255,0.06);
+    }
+    .button-secondary:hover { background: rgba(255,255,255,0.12); }
+
+    .hero-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 18px;
+      padding: 1.4rem;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.14);
+    }
+
+    .hero-card h2 {
+      margin-top: 0;
+      font-size: 1.15rem;
+    }
+
+    .hero-card ul {
+      margin: 0;
+      padding-left: 1rem;
+    }
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      width: 44px;
+      height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.08);
+    }
+
+    .section {
+      padding: 4.5rem 0;
+    }
+
+    .section-alt {
+      background: var(--surface-alt);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-title {
+      margin: 0 0 0.5rem;
+      font-family: 'Crimson Text', serif;
+      font-size: 2.2rem;
+      color: var(--primary);
+    }
+
+    .section-intro {
+      margin: 0 0 2rem;
+      color: var(--muted);
+      max-width: 48rem;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .stat {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--primary);
+      font-size: 1.8rem;
+      line-height: 1;
+      margin-bottom: 0.35rem;
+    }
+
+    .tool-list,
+    .education-list,
+    .research-list {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .tool-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .tool-pills li,
+    .tag {
+      background: #edf3f9;
+      color: var(--primary);
+      border: 1px solid #d6e2ee;
+      border-radius: 999px;
+      padding: 0.45rem 0.8rem;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .profile img {
+      width: 100%;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      object-fit: cover;
+      aspect-ratio: 4 / 5.8;
+    }
+
+    .research-item {
+      border-left: 4px solid var(--accent);
+    }
+
+    .research-item h3 {
+      margin: 0 0 0.45rem;
+      color: var(--primary);
+      font-size: 1.3rem;
+    }
+
+    .meta {
+      margin: 0 0 0.8rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-top: 1rem;
+    }
+
+    .contact-box {
+      text-align: center;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.8rem 1rem;
+      background: #fff;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    footer {
+      padding: 2rem 0 3rem;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .nav-toggle { display: inline-flex; }
+      .nav-list {
+        position: absolute;
+        left: 1rem;
+        right: 1rem;
+        top: calc(100% + 0.65rem);
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.65rem;
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        box-shadow: var(--shadow);
+        display: none;
+      }
+      .nav-list.is-open { display: flex; }
+      .nav-list a { padding: 0.9rem 1rem; }
+      .hero { padding-top: 4.5rem; }
+      .cta-row { flex-direction: column; }
+      .button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Go to homepage">
+        <strong>James Ahabyona</strong>
+        <span>Applied Microeconomist</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list" id="site-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://jamesahabyona.github.io/Jiiiames_ahabyona_cv_web.pdf" target="_blank" rel="noopener">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Survey Design • Data Analysis • Impact Evaluation</span>
+          <h1>Applied microeconomics for real-world policy questions.</h1>
+          <p>I work across Africa, MENA, and Europe on survey design, field research, and quantitative analysis. My work connects rigorous data methods with development and policy decisions.</p>
+
+          <ul class="hero-highlights" aria-label="Highlights">
+            <li>4+ years of experience</li>
+            <li>Research across 8 countries</li>
+            <li>Python, Stata, SurveyCTO, ODK</li>
+          </ul>
+
+          <div class="cta-row">
+            <a class="button button-primary" href="#contact"><i class="fas fa-envelope"></i>Get in touch</a>
+            <a class="button button-secondary" href="#research"><i class="fas fa-file-lines"></i>View research</a>
+          </div>
+
+          <div class="social-links" aria-label="Social links">
+            <a href="https://github.com/Jamesahabyona" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/james-ahabyona-236b81129/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/a_ha256" aria-label="Twitter" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a>
+            <a href="mailto:jemo44t@gmail.com" aria-label="Email James"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/351915223705" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Professional summary">
+          <h2>Current focus</h2>
+          <ul>
+            <li>Research Assistant at Yale Economic Growth Center</li>
+            <li>Large-scale surveys and field operations</li>
+            <li>Technology adoption, education, and development research</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <h2 class="section-title">About</h2>
+          <p class="section-intro">I design surveys, manage field research, and analyze data for policy-relevant projects. My experience spans Africa, MENA, and Europe, with work in Kenya, Rwanda, Uganda, Mozambique, Lebanon, Palestine, Italy, and Portugal.</p>
+
+          <div class="stats" aria-label="Experience summary">
+            <div class="stat"><strong>4+</strong><span>Years of research experience</span></div>
+            <div class="stat"><strong>8</strong><span>Countries across 3 regions</span></div>
+            <div class="stat"><strong>5+</strong><span>Core survey and analysis tools</span></div>
+          </div>
+
+          <div class="card">
+            <p>I currently work as a Research Assistant at <a href="https://egc.yale.edu/" target="_blank" rel="noopener">Yale Economic Growth Center</a>. My work includes survey design, data analysis, and research support on development-focused projects. In my master's thesis, I tested a novel method to measure technology adoption under the supervision of <a href="https://catiabatista.org/" target="_blank" rel="noopener">Professor Catia Batista</a>.</p>
+            <p>I have also worked on the midline evaluation of the <a href="https://canwach.ca/project/enhancing-quality-and-inclusive-education-eqie/" target="_blank" rel="noopener">Enhancing Quality and Inclusive Education</a> project in Mozambique, Lebanon, and Palestine, and on Digital Citizenship Education across <a href="https://www.coe.int/en/web/education/digital-citizenship-education" target="_blank" rel="noopener">Council of Europe</a> member states.</p>
+          </div>
+
+          <div class="card" style="margin-top: 1rem;">
+            <h3 style="margin-top: 0; color: var(--primary);">Tools and methods</h3>
+            <ul class="tool-pills">
+              <li>Python</li>
+              <li>Stata</li>
+              <li>SurveyCTO</li>
+              <li>ODK</li>
+              <li>KoboCollect</li>
+              <li>Qualtrics</li>
+              <li>Spatial analysis</li>
+              <li>Impact evaluation</li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin-top: 1rem;">
+            <h3 style="margin-top: 0; color: var(--primary);">Education</h3>
+            <div class="education-list">
+              <div>
+                <strong>Master's in Economics</strong><br>
+                <span style="color: var(--muted);">Nova School of Business and Economics, Portugal</span>
+              </div>
+              <div>
+                <strong>BA in Development Economics</strong><br>
+                <span style="color: var(--muted);">Makerere University Kampala, Uganda</span>
+              </div>
+              <div>
+                <strong>Diploma in Civil Engineering</strong><br>
+                <span style="color: var(--muted);">Uganda Technical College Bushenyi, Uganda</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="profile">
+          <div class="card">
+            <img src="img/jamesnew.jpg" alt="Portrait of James Ahabyona">
+            <div style="margin-top: 1rem;">
+              <a class="button button-primary" style="width: 100%;" href="https://jamesahabyona.github.io/Jiiiames_ahabyona_cv_web.pdf" target="_blank" rel="noopener">
+                <i class="fas fa-download"></i>Download CV
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="research">
+      <div class="container">
+        <h2 class="section-title">Research</h2>
+        <p class="section-intro">A selection of current work, working papers, and policy research.</p>
+
+        <div class="research-list">
+          <article class="card research-item">
+            <h3>Artisanal Mines and Women Empowerment</h3>
+            <p class="meta">Work in progress</p>
+            <p>Using DHS data, historical gold prices, and geospatial data on artisanal mining across Africa, this project studies how artisanal mines affect women's empowerment.</p>
+            <div class="tag-row">
+              <span class="tag">Women Empowerment</span>
+              <span class="tag">Artisanal Mining</span>
+              <span class="tag">Africa</span>
+            </div>
+          </article>
+
+          <article class="card research-item">
+            <h3>Can Games Measure Mobile Money Adoption? Evidence from Mozambique</h3>
+            <p class="meta">Working paper</p>
+            <p>This paper tests a novel method to measure mobile money adoption using behavioral games linked to administrative transaction data, with evidence from Mozambique.</p>
+            <div class="cta-row" style="margin-top: 1rem;">
+              <a class="button button-secondary" style="border-color: var(--border); color: var(--primary); background: var(--surface-alt);" href="https://jamesahabyona.github.io/new_version_coming_soon.pdf" target="_blank" rel="noopener">
+                <i class="fas fa-download"></i>Draft placeholder
+              </a>
+            </div>
+            <div class="tag-row">
+              <span class="tag">Mobile Money</span>
+              <span class="tag">Technology Adoption</span>
+              <span class="tag">Mozambique</span>
+            </div>
+          </article>
+
+          <article class="card research-item">
+            <h3>Child Labour in Uganda: An Annotated Bibliography</h3>
+            <p class="meta">Policy research report</p>
+            <p>A synthesis of evidence on child labour in Uganda, covering drivers, educational impacts, and policy responses.</p>
+            <div class="cta-row" style="margin-top: 1rem;">
+              <a class="button button-secondary" style="border-color: var(--border); color: var(--primary); background: var(--surface-alt);" href="https://jamesahabyona.github.io/Uganda-1.pdf" target="_blank" rel="noopener">
+                <i class="fas fa-file-pdf"></i>Open report
+              </a>
+            </div>
+            <div class="tag-row">
+              <span class="tag">Child Labour</span>
+              <span class="tag">Uganda</span>
+              <span class="tag">Development</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="card contact-box">
+          <h2 class="section-title">Get in touch</h2>
+          <p class="section-intro" style="margin-left: auto; margin-right: auto;">I’m open to research collaborations, RA opportunities, consulting projects, and conversations about applied economics and data work.</p>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:jemo44t@gmail.com"><i class="fas fa-envelope"></i>jemo44t@gmail.com</a>
+            <a class="contact-link" href="https://wa.me/351915223705" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+            <a class="contact-link" href="https://linkedin.com/in/james-ahabyona-236b81129/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i>LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 James Ahabyona. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav-list');
+
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  </script>
+</body>
+</html>
