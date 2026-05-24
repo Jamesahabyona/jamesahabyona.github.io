@@ -76,3 +76,6 @@ Tools include R, Stata, Python, and QGIS.
 </div>
 
 </div>
+| ![](img/graphs/graph1.png) | ![](img/graphs/graph2.png) |
+|---|---|
+| ![](img/graphs/graph3.png) | ![](img/graphs/graph4.png) |
