@@ -102,6 +102,8 @@ enable_contact: false
 enable_nav: true
 nav_item:
   - { url: '/', text: 'Home' }
+  - { url: '/Data Visualization', text: 'Data Visualization' }
+
 # - { url: '/Data Projects', text: 'Data Projects' }
 #   - { url: '/Research', text: 'Research' }
  # - { url: '/About', text: 'About' }
