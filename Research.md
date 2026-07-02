@@ -21,7 +21,7 @@ Forthcoming drafts are available on request — please email me at
     <h3>Can Games Measure Mobile Money Adoption? Evidence from Mozambique</h3>
     <p class="coauthors">Master's thesis · Universidade Nova de Lisboa — Nova SBE</p>
     <div class="paper-links">
-      <a href="mailto:jemo44t@gmail.com?subject=Request%3A%20Games%20and%20Mobile%20Money%20paper">Available on request</a>
+      <!--<a href="mailto:jemo44t@gmail.com?subject=Request%3A%20Games%20and%20Mobile%20Money%20paper">Available on request</a>-->
       <a href="/games_mobile_money_adoption.pdf">Working draft (PDF)</a>
     </div>
   </div>
