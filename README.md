@@ -1,98 +1,102 @@
-## Phantom for Jekyll
+# James Ahabyona — Personal Site
 
-A minimalist, responsive portfolio theme for [Jekyll](http://jekyllrb.com/) with Bootstrap.
+Modern academic personal site for James Ahabyona, applied microeconomist.
+Built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub Pages at
+<https://jamesahabyona.github.io/>.
 
-![preview](preview.jpg)
+## Design
 
-[See it in action](http://jamigibbs.github.io/phantom/).
+The site uses a warm ivory + scholarly navy palette with subtle gold accents,
+inspired by faculty pages at Harvard Economics, Chicago Booth, MIT Sloan,
+and other top departments. The typography pairs **Playfair Display** (serif,
+for headlines) with **Inter** (sans, for body) and **JetBrains Mono** (for
+small monospaced details like dates and labels).
 
-## Fancy using it for your own site?
+The design is:
 
-Here are some steps to get you started:
+- **Clean and academic** — generous whitespace, refined type, minimal decoration
+- **Responsive** — mobile-first with breakpoints at 720px, 768px, 880px
+- **Accessible** — semantic HTML, ARIA labels, skip link, focus styles
+- **Fast** — one CSS file, one JS file, no build step beyond Jekyll
 
-1. Clone this repo and cd into the directory:
+## Structure
 
-  ```bash
-  git clone https://github.com/jamigibbs/phantom.git your-dir-name && cd your-dir-name
-  ```
-
-2. Run:
-
-  ```bash
-  gem install bundler
-  bundle install
-  bundle exec jekyll serve
-  ```
-
-  You may need to append your commands with `sudo` if you're getting a permissions error.
-
-  _Don't have Jekyll yet? [Get `er installed then!](http://jekyllrb.com/docs/installation/)_
-
-3. Visit in your browser at:
-
-  `http://127.0.0.1:4000`
-
-## Launching with Github Pages :rocket:
-
-Jekyll + Github pages is a marriage made in heaven. You can [use your own custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) or use the default Github url (ie. http://username.github.io/repository) and not bother messing around with DNS settings.
-
-## Theme Features
-
-### Navigation
-
-Navigation can be customized in `_config.yml` under the `nav_item` key. Default settings:
-
-```yaml
-nav_item:
-    - { url: '/', text: 'Home' }
-    - { url: '/about', text: 'About' }
+```
+/
+├── _config.yml          # Site config (title, social, plugins)
+├── _layouts/
+│   ├── default.html     # Base layout (header + footer + main)
+│   ├── home.html        # Home page layout
+│   └── page.html        # Inner pages (About, Research, Resources, CV)
+├── _includes/
+│   ├── site-header.html # Sticky top nav with mobile toggle
+│   └── site-footer.html # Footer with social, links, copyright
+├── css/
+│   └── main.css         # All styles (design tokens → components)
+├── js/
+│   └── app.js           # Mobile nav, scroll-reveal, active-link
+├── img/                 # Images, favicons
+├── *.md                 # Page content
+│   ├── about.md
+│   ├── research.md
+│   ├── data-visualizations.md
+│   ├── resources.md
+│   └── cv.md
+├── index.html           # Home page
+└── *.pdf                # CV, working papers, certificates
 ```
 
-Set the `nav_enable` variable to false in `_config.yml` to disable navigation.
+## Local development
 
-### Contact Form
+```bash
+# Install dependencies
+bundle install
 
-You can display a contact form within the modal window template. This template is already setup to use the [Formspree](https://formspree.io) email system. You'll just want to add your email address to the form in `/_includes/contact-modal.html`.
+# Serve locally at http://127.0.0.1:4000
+bundle exec jekyll serve
 
-Place the modal window template in any place you'd like the user to click for the contact form.
-The template will display a link to click for the contact form modal window:
-
-```liquid
-{% include contact.html %}
-{% include contact-modal.html %}
+# Build to ./_site
+bundle exec jekyll build
 ```
 
-### Animation Effects
+## Deploying
 
-Animations with CSS classes are baked into the theme. To animate a section or element, simply add the animation classes:
+The site is configured to deploy automatically via GitHub Pages from the
+default branch. Push to `main` and GitHub will build and publish.
 
-```html
-<div id="about-me" class="wow fadeIn">
-  I'm the coolest!
-</div>
-```
+## Pages
 
-For a complete list of animations, see the [animation list](http://daneden.github.io/animate.css/).
+- **Home** (`/`) — hero, news, about preview, research preview, data viz
+  preview, contact
+- **Research** (`/research/`) — full list of working papers, work in
+  progress, publications, training
+- **Data Visualizations** (`/data-visualizations/`) — gallery of maps and
+  graphs from research
+- **Resources** (`/resources/`) — curated reading list for economists
+- **CV** (`/cv/`) — embedded PDF + download link
 
-### Pagination
+## Adding a new paper
 
-By default, pagination on the home page will activate after 10 posts. You can change this within `_config.yml`. You can add the pagination to other layouts with:
+Edit `research.md` and add a new `<div class="research-item ...">` block
+inside the appropriate group (`Working Papers`, `Work in Progress`,
+`Publications &amp; Reports`).
 
-```liquid
-  {% for post in paginator.posts %}
-    {% include post-content.html %}
-  {% endfor %}
+## Adding a news item
 
-  {% include pagination.html %}
-```
+Edit the `<ul class="news-list">` block in `index.html` and add a new
+`<li class="news-item fade-in">` entry. Keep entries in reverse
+chronological order.
 
-Read more about the [pagination plugin](http://jekyllrb.com/docs/pagination/).
+## Adding a data visualization
 
-## Credit
+1. Drop the image into `/img/`
+2. Add a new `<article class="viz-card ...">` block in
+   `data-visualizations.md`
 
-* Bootstrap, http://getbootstrap.com/, (C) 2011 - 2016 Twitter, Inc., [MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
+## Credits
 
-* Wow, https://github.com/matthieua/WOW, (C) 2014 - 2016 Matthieu Aussaguel
-, [GPL](https://github.com/matthieua/WOW#open-source-license)
-
-* Animate.css, https://github.com/daneden/animate.css, (C) 2016 Daniel Eden, [MIT](https://github.com/daneden/animate.css/blob/master/LICENSE)
+- Design inspired by faculty pages at Harvard, Chicago Booth, MIT Sloan,
+  Berkeley, and LSE.
+- Icons by [Font Awesome](https://fontawesome.com/).
+- Fonts by [Google Fonts](https://fonts.google.com/).
+- Built with [Jekyll](https://jekyllrb.com/).
