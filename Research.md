@@ -34,7 +34,7 @@ Forthcoming drafts are available on request — please email me at
   <div>
     <span class="status">Data Analysis</span>
     <h3>Artisanal Mines and Women Empowerment</h3>
-    <p class="coauthors">With Uchechi S. Anaduaka</p>
+    <p class="coauthors">With TBA </p>
     <div class="paper-links">
       <a href="mailto:jemo44t@gmail.com?subject=Request%3A%20Artisanal%20Mines%20paper">Available on request</a>
     </div>
