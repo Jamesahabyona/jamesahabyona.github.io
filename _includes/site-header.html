@@ -1,0 +1,19 @@
+<header class="site-header" role="banner">
+  <div class="container">
+    <a href="{{ '/' | relative_url }}" class="brand" aria-label="{{ site.title }} — home">
+      <span class="brand-name">James Ahabyona</span>
+      <span class="brand-tag">Applied Microeconomist</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        {% assign current = page.url | default: '/' %}
+        <li><a href="{{ '/' | relative_url }}"{% if current == '/' %} class="active"{% endif %}>Home</a></li>
+        <li><a href="{{ '/research/' | relative_url }}"{% if current == '/research/' %} class="active"{% endif %}>Research</a></li>
+        <li><a href="{{ '/data-visualizations/' | relative_url }}"{% if current == '/data-visualizations/' %} class="active"{% endif %}>Data</a></li>
+        <li><a href="{{ '/about/' | relative_url }}"{% if current == '/about/' %} class="active"{% endif %}>About</a></li>
+        <li><a href="{{ '/cv/' | relative_url }}"{% if current == '/cv/' %} class="active"{% endif %}>CV</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
