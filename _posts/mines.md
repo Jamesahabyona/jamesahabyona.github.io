@@ -1,6 +1,5 @@
 ---
-layout: inner
-position: left
+layout: default
 title: '"Artisanal Mines and Women Empowerment" with Uchechi S. Anaduaka"'
 date: 2023-12-20 15:56:00
 categories: Development

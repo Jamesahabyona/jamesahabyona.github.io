@@ -1,5 +1,31 @@
-*.gem
-.bundle
-.sass-cache
-_site
-Gemfile.lock
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+*.bak
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Local dev (preview server, screenshots, etc.)
+preview.py
+debug*.py
+verify*.py
+dump.py
+rendered-*.html
+preview-*.jpg
+preview-*.html
+*.pyc
+
+# Jekyll build artifacts
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Don't track Gemfile.lock in the public site
+# (uncomment if you want to enforce this)
+# Gemfile.lock
