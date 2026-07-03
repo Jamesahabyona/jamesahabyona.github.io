@@ -12,11 +12,8 @@ description: James Ahabyona is an applied microeconomist researching development
     <h1 class="name">James Ahabyona</h1>
 
     <p class="bio">
-      I am an applied microeconomist researching development, technology adoption,
-      education, and the long-term effects of early-life circumstances across
-      Africa. I am completing my MA in Economics at Nova SBE, supervised by
-      <a href="https://catiabatista.org/">Catia Batista</a>, and previously
-      worked as a Research Assistant at the
+      I work on development topics such as technology adoption, education, and the long-term effects of early-life circumstances across Africa. I completed my MSc in Economics at Nova SBE, supervised by
+      <a href="https://catiabatista.org/">Catia Batista</a>, and previously worked as a Research Assistant at the
       <a href="https://egc.yale.edu/">Yale Economic Growth Center</a>.
     </p>
 
