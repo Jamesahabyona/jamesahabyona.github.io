@@ -36,7 +36,7 @@ Forthcoming drafts are available on request — please email me at
   <span class="year">2026</span>
   <div>
     <h3>Artisanal Mines and Women Empowerment</h3>
-    <p class="coauthors">With Uchechi S. Anaduaka</p>
+    <p class="coauthors">With TBA</p>
     <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-mines">Abstract</button>
     <div class="paper-abstract" id="abstract-mines" hidden>
       Using DHS data, historical gold prices, and a unique geospatial dataset of artisanal mining activities across Africa, we examine how artisanal mines affect women empowerment outcomes across the continent. We document large negative effects on women's labor force participation and educational attainment in districts near active mines, with partial offset through expanded access to local markets and microfinance.

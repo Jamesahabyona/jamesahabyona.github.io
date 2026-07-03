@@ -41,7 +41,7 @@ description: James Ahabyona is an applied microeconomist researching development
       <div>
         <span class="stage stage--working">Working Paper</span>
         <h3 class="paper-title" role="button" tabindex="0" aria-expanded="false">Can Games Measure Mobile Money Adoption? Evidence from Mozambique</h3>
-        <p class="coauthors">Master's thesis Â· Universidade Nova de Lisboa â€” Nova SBE</p>
+        <p class="coauthors">Master's thesis · Universidade Nova de Lisboa — Nova SBE</p>
         <div class="paper-abstract" hidden>
           Forecasting the adoption of technological innovations is difficult but potentially impactful, particularly in rural low-income communities worldwide. This paper tests a novel method to measure mobile money adoption by employing behavioral measures to elicit preferences for saving or remitting using mobile money. I link these game decisions to individual-level mobile money administrative transaction data; my findings show that while willingness to remit through mobile money strongly predicts adoption in the second and third years after mobile money was introduced, willingness to save in the mobile money game is a strong predictor of future mobile money cash-in and any mobile money transaction in the first, second, and third years.
         </div>
@@ -82,15 +82,15 @@ description: James Ahabyona is an applied microeconomist researching development
     <ul class="news-list">
       <li class="news-item">
         <span class="news-date">Jul 2026</span>
-        <p>Launching the redesigned personal site with a complete research portfolio and data-visualization gallery.</p>
+        <p>Launched my redesigned personal site.</p>
       </li>
       <li class="news-item">
         <span class="news-date">Jun 2026</span>
-        <p>Featured on <a href="https://theeconomicmisfit.com/" target="_blank" rel="noopener">The Economic Misfit</a> â€” a platform I founded to support economists across Africa.</p>
+        <p>Launched the Economic Misfit, and I lead the platform’s strategic direction, partnerships, and growth, working closely with universities, research centers, and international organizations.</p>
       </li>
       <li class="news-item">
-        <span class="news-date">May 2026</span>
-        <p>New draft of <em>Can Games Measure Mobile Money Adoption? Evidence from Mozambique</em> under review.</p>
+        <span class="news-date">May 2025</span>
+        <p>Started working on <em>Artisanal Mines and Women Empowerment</em>.</p>
       </li>
     </ul>
   </div>
