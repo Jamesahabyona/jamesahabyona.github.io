@@ -12,9 +12,9 @@ research focuses on mobile money adoption, artisanal mining economics,
 higher-education policy analysis, decentralization, and the long-term impacts
 of early-life circumstances across Africa.
 
-I am completing my **Master's in Economics at
+I completed my **Master's in Economics at
 [Universidade Nova de Lisboa — Nova SBE](https://www.novasbe.unl.pt/en/programs/masters/economics/program)**,
-where my thesis is supervised by
+where my thesis was supervised by
 [Prof. Catia Batista](https://catiabatista.org/).
 
 I previously worked as a **Research Assistant at the
@@ -46,9 +46,8 @@ opportunities.
 - **Primary:** Development Economics, Economics of Education
 - **Secondary:** Political Economy, Environmental Economics
 
-## Methods & Tools
+## Tools
 
-- Causal inference: difference-in-differences, regression discontinuity, instrumental variables
 - Survey design: SurveyCTO, ODK, KoboCollect, Qualtrics
 - Analysis: Python, Stata, R
 - Geospatial: GeoPandas, Shapely, Rasterio, QGIS
