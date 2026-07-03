@@ -53,4 +53,6 @@ Forthcoming drafts are available on request — please email me at
 </div>
 
 If you find a typo, broken link, or a paper I've missed citing, please
-[let me know](mailto:jemo44t@gmail.com).
+[let me know]
+
+<!-- touched at 02:36:29 -->(mailto:jemo44t@gmail.com).
