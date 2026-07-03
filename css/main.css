@@ -780,6 +780,16 @@ body.navy-page .page-header .subtitle {
   color: var(--color-text-muted);
   margin: 0;
 }
+.coming-soon {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  font-style: italic;
+  text-align: center;
+  padding: var(--sp-6) 0;
+  border: 1px dashed var(--color-rule);
+  border-radius: 2px;
+  margin: var(--sp-4) 0;
+}
 
 /* --------------------------------------------------------------------------
    11. Resources
