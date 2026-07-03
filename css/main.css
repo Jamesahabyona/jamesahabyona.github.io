@@ -339,22 +339,23 @@ blockquote {
 }
 .news-list { list-style: none; padding: 0; margin: 0; }
 .news-item {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: var(--sp-4);
   padding: var(--sp-3) 0;
   border-bottom: 1px solid var(--color-rule-soft);
-  text-align: center;
-  max-width: 720px;
+  text-align: left;
+  max-width: 760px;
   margin-left: auto;
   margin-right: auto;
 }
 .news-item:last-child { border-bottom: 0; }
 .news-date {
-  display: inline;
   color: var(--color-text-muted);
   font-variant-numeric: tabular-nums;
   font-size: var(--fs-sm);
-  margin-right: var(--sp-2);
 }
-.news-item p { display: inline; margin: 0; }
+.news-item p { margin: 0; }
 
 /* The Economic Misfit section on home */
 .misfit {

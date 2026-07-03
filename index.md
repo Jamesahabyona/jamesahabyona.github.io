@@ -53,7 +53,7 @@ description: James Ahabyona is an applied microeconomist researching development
       <div>
         <span class="stage stage--progress">Work in Progress</span>
         <h3 class="paper-title" role="button" tabindex="0" aria-expanded="false">Artisanal Mines and Women Empowerment</h3>
-        <p class="coauthors">With Uchechi S. Anaduaka</p>
+        <p class="coauthors">With TBA</p>
         <div class="paper-abstract" hidden>
           Using DHS data, historical gold prices, and a unique geospatial dataset of artisanal mining activities across Africa, we examine how artisanal mines affect women empowerment outcomes across the continent.
         </div>
