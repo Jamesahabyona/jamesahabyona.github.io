@@ -623,6 +623,50 @@ body.navy-page .page-header .subtitle {
   font-size: 0.85em;
 }
 
+/* "Abstract" button + abstract panel (research page) */
+.abstract-toggle {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-link);
+  background: transparent;
+  border: 1px solid var(--color-link);
+  padding: 3px 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: var(--sp-2) 0;
+  transition: background 0.15s var(--ease), color 0.15s var(--ease);
+}
+.abstract-toggle:hover,
+.abstract-toggle:focus {
+  background: var(--color-link);
+  color: #ffffff;
+  outline: none;
+}
+.abstract-toggle.is-open {
+  background: var(--color-link);
+  color: #ffffff;
+}
+.research-item .paper-abstract {
+  display: none;
+  margin: var(--sp-2) 0 var(--sp-3);
+  font-size: var(--fs-sm);
+  line-height: 1.65;
+  color: var(--color-text);
+  padding: var(--sp-3) var(--sp-4);
+  border-left: 3px solid var(--color-link);
+  background: var(--color-bg-alt);
+}
+.research-item .paper-abstract[hidden] {
+  display: none;
+}
+.research-item .paper-abstract.is-open {
+  display: block;
+}
+
 /* Stage pill (Working Paper / Work in Progress / Publication) */
 .stage {
   display: inline-block;

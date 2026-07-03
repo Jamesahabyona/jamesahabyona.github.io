@@ -88,4 +88,28 @@
       }
     });
   });
+
+  // --- "Abstract" button toggle (research page) ---
+  document.querySelectorAll('.abstract-toggle').forEach(function (btn) {
+    const targetId = btn.getAttribute('aria-controls');
+    if (!targetId) return;
+    const abstract = document.getElementById(targetId);
+    if (!abstract) return;
+
+    function toggle() {
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      btn.classList.toggle('is-open', !isOpen);
+      btn.textContent = isOpen ? 'Abstract' : 'Hide abstract';
+      if (isOpen) {
+        abstract.classList.remove('is-open');
+        abstract.setAttribute('hidden', '');
+      } else {
+        abstract.classList.add('is-open');
+        abstract.removeAttribute('hidden');
+      }
+    }
+
+    btn.addEventListener('click', toggle);
+  });
 })();
