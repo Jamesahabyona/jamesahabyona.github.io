@@ -6,8 +6,8 @@ body_class: navy-page
 subtitle: Graphs and maps produced as part of my research in applied microeconomics — R, Stata, Python, and QGIS.
 ---
 
-A selection of graphs and maps from my research, teaching, and side projects.
-Tools used include R, Stata, Python, and QGIS.
+A selection of graphs and maps from my research, and data projects.
+Tools used include Stata, Python, and QGIS.
 
 ## Maps
 
