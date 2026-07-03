@@ -3,6 +3,7 @@ layout: page
 title: Curriculum Vitae
 permalink: /cv/
 body_class: navy-page
+hide_eyebrow: true
 subtitle: Download my CV or view the embedded version below.
 ---
 
