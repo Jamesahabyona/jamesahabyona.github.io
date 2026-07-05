@@ -8,13 +8,12 @@ hide_eyebrow: true
 
 I am an applied microeconomist interested in using administrative data, text,
 historical maps, and GIS data to study development-related topics. My current
-research focuses on mobile money adoption, artisanal mining economics,
-higher-education policy analysis, decentralization, and the long-term impacts
-of early-life circumstances across Africa.
+research focuses on mobile money adoption, artisanal mining, higher-education policy analysis, 
+and the long-term impacts of early-life circumstances across Africa.
 
 I completed my **Master's in Economics at
-[Universidade Nova de Lisboa — Nova SBE](https://www.novasbe.unl.pt/en/programs/masters/economics/program)**,
-where my thesis was supervised by
+[Universidade Nova de Lisboa — Nova SBE](https://www.novasbe.unl.pt/en/programs/masters/economics/program)**. In my master's 
+thesis, I tested a novel method to measure technology adoption under the supervision of
 [Prof. Catia Batista](https://catiabatista.org/).
 
 I previously worked as a **Research Assistant at the
@@ -31,13 +30,12 @@ community. This project is highlighted in
 [The 2024 Little Big Fund Impact Report](https://www.littlebig.fund/s/LBF-Impact-Report-Presentation-1.pdf),
 showcasing community-led social change-makers around the world.
 
-I also founded [The Economic Misfit](https://theeconomicmisfit.com/), a
-platform dedicated to supporting economists in navigating careers and
-opportunities.
+I also founded [The Economic Misfit](https://theeconomicmisfit.com/), a platform dedicated to supporting economists 
+in navigating careers and opportunities.
 
 ## Education
 
-- **MA in Economics**, Universidade Nova de Lisboa · Nova SBE, Portugal (2024 — present)
+- **MA in Economics**, Universidade Nova de Lisboa · Nova SBE, Portugal
 - **BA in Development Economics**, [Makerere University](https://mak.ac.ug/), Uganda
 - **Diploma in Civil Engineering**, [Uganda Technical College Bushenyi](https://utcbushenyi.ac.ug/), Uganda
 
@@ -49,7 +47,7 @@ opportunities.
 ## Tools
 
 - Survey design: SurveyCTO, ODK, KoboCollect, Qualtrics
-- Analysis: Python, Stata, R
+- Analysis: Python, Stata
 - Geospatial: GeoPandas, Shapely, Rasterio, QGIS
 
 ## Professional Experience
