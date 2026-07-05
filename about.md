@@ -52,10 +52,10 @@ in navigating careers and opportunities.
 
 ## Professional Experience
 
-- **Research Assistant**, [Yale Economic Growth Center](https://egc.yale.edu/) (2026 — present)
+- **Research Assistant**, [Yale Economic Growth Center](https://egc.yale.edu/) (2025 — 2026)
 - **Research Assistant** — Midline Evaluation of EQIE Project, [Learn More](https://learn-more.eu/) (2024 — 2025)
-- **Founder & Editor**, [The Economic Misfit](https://theeconomicmisfit.com/) (2022 — present)
-- **Co-founder & Program Lead**, [Move Network International (MNI)](https://www.moveinternational.org/) (2023 — present)
+- **Founder & Editor**, [The Economic Misfit](https://theeconomicmisfit.com/) (2025 — present)
+- **Co-founder**, [Move Network International (MNI)](https://www.moveinternational.org/) (2019 — present)
 
 ## Recent Training
 
