@@ -14,7 +14,7 @@ Forthcoming drafts are available on request — please email me at
 ## Working Papers
 
 <div class="research-item">
-  <span class="year">2026</span>
+  <span class="year">2025</span>
   <div>
     <h3>Can Games Measure Mobile Money Adoption? Evidence from Mozambique</h3>
     <p class="coauthors">Master's thesis &middot; Universidade Nova de Lisboa &mdash; Nova SBE</p>
