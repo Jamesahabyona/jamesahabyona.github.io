@@ -13,7 +13,7 @@ description: James Ahabyona is an applied microeconomist researching development
 
     <p class="bio">
       I work on development topics such as technology adoption, education, and the long-term effects of early-life circumstances across Africa. I completed my MSc in Economics at Nova SBE, supervised by
-      <a href="https://catiabatista.org/">Catia Batista</a>, and previously worked as a Research Assistant at the
+      <a href="https://catiabatista.org/">Prof. Catia Batista</a>, and previously worked as a Research Assistant at the
       <a href="https://egc.yale.edu/">Yale Economic Growth Center</a>.
     </p>
 
@@ -42,7 +42,6 @@ description: James Ahabyona is an applied microeconomist researching development
           Forecasting the adoption of technological innovations is difficult but potentially impactful, particularly in rural low-income communities worldwide. This paper tests a novel method to measure mobile money adoption by employing behavioral measures to elicit preferences for saving or remitting using mobile money. I link these game decisions to individual-level mobile money administrative transaction data; my findings show that while willingness to remit through mobile money strongly predicts adoption in the second and third years after mobile money was introduced, willingness to save in the mobile money game is a strong predictor of future mobile money cash-in and any mobile money transaction in the first, second, and third years.
         </div>
         <div class="paper-links">
-          <a href="mailto:jemo44t@gmail.com?subject=Request%3A%20Games%20and%20Mobile%20Money%20paper">Available on request</a>
           <a href="/games_mobile_money_adoption.pdf">Working draft (PDF)</a>
         </div>
       </div>
@@ -78,11 +77,11 @@ description: James Ahabyona is an applied microeconomist researching development
     <ul class="news-list">
       <li class="news-item">
         <span class="news-date">Jul 2026</span>
-        <p>Launched my redesigned personal site.</p>
+        <p>Launched my redesigned personal website.</p>
       </li>
       <li class="news-item">
-        <span class="news-date">Jun 2026</span>
-        <p>Launched the Economic Misfit, and I lead the platform’s strategic direction, partnerships, and growth, working closely with universities, research centers, and international organizations.</p>
+        <span class="news-date">Dec 2025</span>
+        <p>Launched The Economic Misfit.</p>
       </li>
       <li class="news-item">
         <span class="news-date">May 2025</span>
