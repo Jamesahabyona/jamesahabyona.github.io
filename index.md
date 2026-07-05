@@ -76,7 +76,7 @@ description: James Ahabyona is an applied microeconomist researching development
       <ul class="news-list">
       <li class="news-item">
         <span class="news-date">Jul 2026</span>
-        <p>Released a GRE Vocabulary Study Tool href="mailto:jemo44t@gmail.com?subject=Request%3A%20GRE%20Mines%20Vocab Tool">Request</p>
+        <p>Released a GRE Vocabulary Study Tool <a href="mailto:jemo44t@gmail.com?subject=Request%3A%20GRE%20Mines%20Vocab Tool">Request</a></p>
       </li>
     <ul class="news-list">
       <li class="news-item">
