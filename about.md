@@ -35,7 +35,7 @@ in navigating careers and opportunities.
 
 ## Education
 
-- **MA in Economics**, Universidade Nova de Lisboa · Nova SBE, Portugal
+- **MSc in Economics**, [Universidade Nova de Lisboa · Nova SBE](https://www.novasbe.unl.pt/en/programs/masters/economics/program), Portugal
 - **BA in Development Economics**, [Makerere University](https://mak.ac.ug/), Uganda
 - **Diploma in Civil Engineering**, [Uganda Technical College Bushenyi](https://utcbushenyi.ac.ug/), Uganda
 
