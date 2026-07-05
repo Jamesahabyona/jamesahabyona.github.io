@@ -6,7 +6,7 @@ body_class: navy-page
 hide_eyebrow: true
 ---
 
-I work on development topics such as on technology adoption, education, and the long-term effects of early-life circumstances across Africa. Most of my research combines administrative data with field-experimental or quasi-experimental designs.
+I work on development related issues such as technology adoption, education, and the long-term effects of early-life circumstances across Africa. Most of my research combines administrative data with field-experimental or quasi-experimental designs.
 
 Forthcoming drafts are available on request — please email me at
 [jemo44t@gmail.com](mailto:jemo44t@gmail.com).
