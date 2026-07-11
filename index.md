@@ -110,7 +110,7 @@ description: James Ahabyona is an applied microeconomist researching development
         <img class="misfit-logo" src="{{ '/img/misfit-logo.png' | relative_url }}" alt="The Economic Misfit logo">
       </a>
       <div class="misfit-text">
-        <span class="section-eyebrow">Check out The Career Platform for Economics</span>
+        <span class="section-eyebrow">Check out The Career Platform for Economists</span>
         <h2 class="section-title">
           <a href="https://theeconomicmisfit.com/" target="_blank" rel="noopener">The Economic Misfit</a>
         </h2>
