@@ -79,7 +79,7 @@ description: James Ahabyona is an applied microeconomist researching development
         <span class="news-date">Jul 2026</span>
         <p>
           Released a GRE Vocabulary Study Tool
-          <a href="mailto:jemo44t@gmail.com?subject=Request%3A%20GRE%20Mines%20Vocab%20Tool">Request</a>
+          <a href="mailto:jemo44t@gmail.com?subject=Request%3A%20GRE%20Mines%20Vocab%20Tool"> Click Here To Request It</a>
         </p>
       </li>
 
@@ -99,6 +99,26 @@ description: James Ahabyona is an applied microeconomist researching development
       </li>
     </ul>
 
+  </div>
+</section>
+
+<!-- The Economic Misfit -->
+<section class="misfit">
+  <div class="container">
+    <div class="misfit-row">
+      <a href="https://theeconomicmisfit.com/" target="_blank" rel="noopener" class="misfit-logo-link">
+        <img class="misfit-logo" src="{{ '/img/misfit-logo.png' | relative_url }}" alt="The Economic Misfit logo">
+      </a>
+      <div class="misfit-text">
+        <span class="section-eyebrow">Check out The Career Platform for Economics</span>
+        <h2 class="section-title">
+          <a href="https://theeconomicmisfit.com/" target="_blank" rel="noopener">The Economic Misfit</a>
+        </h2>
+        <p class="section-lead">
+          The Economic Misfit is a global platform built for economists navigating careers, research, and opportunities.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
