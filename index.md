@@ -73,45 +73,32 @@ description: James Ahabyona is an applied microeconomist researching development
 <section class="news-preview">
   <div class="container">
     <h2 class="news-title">News</h2>
-      <ul class="news-list">
+
+    <ul class="news-list">
       <li class="news-item">
         <span class="news-date">Jul 2026</span>
-        <p>Released a GRE Vocabulary Study Tool <a href="mailto:jemo44t@gmail.com?subject=Request%3A%20GRE%20Mines%20Vocab Tool">Request</a></p>
+        <p>
+          Released a GRE Vocabulary Study Tool
+          <a href="mailto:jemo44t@gmail.com?subject=Request%3A%20GRE%20Mines%20Vocab%20Tool">Request</a>
+        </p>
       </li>
-    <ul class="news-list">
+
       <li class="news-item">
         <span class="news-date">Jul 2026</span>
         <p>Launched my redesigned personal website.</p>
       </li>
+
       <li class="news-item">
         <span class="news-date">Dec 2025</span>
         <p>Launched The Economic Misfit.</p>
       </li>
+
       <li class="news-item">
         <span class="news-date">May 2025</span>
         <p>Started working on <em>Artisanal Mines and Women Empowerment</em>.</p>
       </li>
     </ul>
-  </div>
-</section>
 
-<!-- The Economic Misfit -->
-<section class="misfit">
-  <div class="container">
-    <div class="misfit-row">
-      <a href="https://theeconomicmisfit.com/" target="_blank" rel="noopener" class="misfit-logo-link">
-        <img class="misfit-logo" src="{{ '/img/misfit-logo.png' | relative_url }}" alt="The Economic Misfit logo">
-      </a>
-      <div class="misfit-text">
-        <span class="section-eyebrow">Check out The Career Platform for Economics</span>
-        <h2 class="section-title">
-          <a href="https://theeconomicmisfit.com/" target="_blank" rel="noopener">The Economic Misfit</a>
-        </h2>
-        <p class="section-lead">
-          The Economic Misfit is a global platform built for economists navigating careers, research, and opportunities.
-        </p>
-      </div>
-    </div>
   </div>
 </section>
 
