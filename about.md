@@ -25,7 +25,7 @@ Europe (Italy, Portugal).
 I co-founded [Move Network International (MNI)](https://www.moveinternational.org/),
 a youth-led organization that operates in my community of Luzira, a suburb of
 Kampala, Uganda. As part of MNI, I secured a $1,500 grant in 2023 to launch a financial empowerment 
-program that benefited more than 35 teenage mothers in our community. This project is highlighted in
+program that benefited more than 35 teenage mothers in our community. Our work was highlighted in
 [The 2024 Little Big Fund Impact Report](https://www.littlebig.fund/s/LBF-Impact-Report-Presentation-1.pdf),
 showcasing community-led social change-makers around the world.
 
