@@ -46,7 +46,7 @@ in navigating careers and opportunities.
 ## Tools
 
 - Survey design: SurveyCTO, ODK, KoboCollect, Qualtrics
-- Analysis: Python, Stata
+- Analysis: Python, Stata, SQL
 - Geospatial: GeoPandas, Shapely, Rasterio, QGIS
 
 ## Professional Experience
