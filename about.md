@@ -13,8 +13,8 @@ and the long-term impacts of early-life circumstances across Africa.
 
 I hold a **Master's in Economics from
 [Universidade Nova de Lisboa — Nova SBE](https://www.novasbe.unl.pt/en/programs/masters/economics/program)**, 
-where I studied as a [**NOVAFRICA Merit Scholarship**](https://novafrica.org/novafrica-merit-scholarships-2/). In my master's 
-thesis, I tested a novel method to measure technology adoption under the supervision of
+and was a recipient of the [**NOVAFRICA Merit Scholarship**](https://novafrica.org/novafrica-merit-scholarships-2/). 
+In my master's thesis, I tested a novel method to measure technology adoption under the supervision of
 [Professor Catia Batista](https://catiabatista.org/).
 
 I previously worked as a **Research Assistant at the
