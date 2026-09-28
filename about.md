@@ -11,10 +11,11 @@ historical maps, and GIS data to study development-related topics. My current
 research focuses on mobile money adoption, artisanal mining, higher-education policy analysis, 
 and the long-term impacts of early-life circumstances across Africa.
 
-I completed my **Master's in Economics at
-[Universidade Nova de Lisboa — Nova SBE](https://www.novasbe.unl.pt/en/programs/masters/economics/program)**. In my master's 
+I hold a **Master's in Economics from
+[Universidade Nova de Lisboa — Nova SBE](https://www.novasbe.unl.pt/en/programs/masters/economics/program)**, 
+where I studied as a [**NOVAFRICA Merit Scholarship**](https://novafrica.org/novafrica-merit-scholarships-2/). In my master's 
 thesis, I tested a novel method to measure technology adoption under the supervision of
-[Prof. Catia Batista](https://catiabatista.org/).
+[Professor Catia Batista](https://catiabatista.org/).
 
 I previously worked as a **Research Assistant at the
 [Yale Economic Growth Center](https://egc.yale.edu/)**, and have over four
