@@ -13,7 +13,7 @@ description: James Ahabyona is an applied microeconomist researching development
 
     <p class="bio">
      <!-- I currently work on development topics such as technology adoption, education, and the long-term effects of early-life circumstances across Africa.--> 
-     <p>
+
   I completed my <strong>Master's in Economics</strong> at
   <a href="https://www.novasbe.unl.pt/en/programs/masters/economics/program" target="_blank" rel="noopener">
     Universidade Nova de Lisboa — Nova School of Business and Economics
