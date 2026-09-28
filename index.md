@@ -63,7 +63,7 @@ description: James Ahabyona is an applied microeconomist researching development
         <h3 class="paper-title" role="button" tabindex="0" aria-expanded="false">Artisanal Mines and Women Empowerment</h3>
         <p class="coauthors">With TBA</p>
         <div class="paper-abstract" hidden>
-          Using DHS data, historical gold prices, and a unique geospatial dataset of artisanal mining activities across Africa, we examine how artisanal mines affect women empowerment outcomes across the continent.
+          Using DHS data, historical gold prices, and a unique geospatial dataset of artisanal mining activities across Africa, we examine how artisanal mines affect women empowerment in Africa.
         </div>
         <div class="paper-links">
           <a href="mailto:jemo44t@gmail.com?subject=Request%3A%20Artisanal%20Mines%20paper">Available on request</a>
