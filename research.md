@@ -37,7 +37,7 @@ hide_eyebrow: true
     <p class="coauthors">With TBA</p>
     <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-mines">Abstract</button>
     <div class="paper-abstract" id="abstract-mines" hidden>
-      Using DHS data, historical gold prices, and a unique geospatial dataset of artisanal mining activities across Africa, we examine how artisanal mines affect women empowerment outcomes across the continent. We document large negative effects on women's labor force participation and educational attainment in districts near active mines, with partial offset through expanded access to local markets and microfinance.
+      Using DHS data, historical gold prices, and a unique geospatial dataset of artisanal mining activities across Africa, we examine how artisanal mines affect women empowerment in Africa.
     </div>
     <div class="paper-links">
       <a href="mailto:jemo44t@gmail.com?subject=Request%3A%20Artisanal%20Mines%20paper">Available on request</a>
