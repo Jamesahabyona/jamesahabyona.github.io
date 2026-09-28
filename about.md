@@ -23,14 +23,14 @@ years of experience designing surveys and analyzing data on projects across
 Africa (Kenya, Rwanda, Uganda, Mozambique), MENA (Lebanon, Palestine), and
 Europe (Italy, Portugal).
 
-I co-founded [Move Network International (MNI)](https://www.moveinternational.org/),
+I co-founded [**Move Network International (MNI)**](https://www.moveinternational.org/),
 a youth-led organization that operates in my community of Luzira, a suburb of
 Kampala, Uganda. As part of MNI, I secured a $1,500 grant in 2023 to launch a financial empowerment 
 program that benefited more than 35 teenage mothers in our community. Our work was highlighted in
-[The 2024 Little Big Fund Impact Report](https://www.littlebig.fund/s/LBF-Impact-Report-Presentation-1.pdf),
+[**The 2024 Little Big Fund Impact Report**](https://www.littlebig.fund/s/LBF-Impact-Report-Presentation-1.pdf),
 showcasing community-led social change-makers around the world.
 
-I also founded [The Economic Misfit](https://theeconomicmisfit.com/), a platform dedicated to supporting economists 
+I also founded [**The Economic Misfit**](https://theeconomicmisfit.com/), a platform dedicated to supporting economists 
 in navigating careers and opportunities.
 
 ## Education
@@ -41,7 +41,7 @@ in navigating careers and opportunities.
 
 ## Fields of Interest
 
-- **Primary:** Development Economics, Economics of Education
+- **Primary:** Development Economics, Economics of Education, Public Economics
 - **Secondary:** Political Economy, Environmental Economics
 
 ## Tools
