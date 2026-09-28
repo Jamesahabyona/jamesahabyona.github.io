@@ -21,7 +21,9 @@ description: James Ahabyona is an applied microeconomist researching development
   and previously worked as a Research Assistant at the
   <a href="https://egc.yale.edu/" target="_blank" rel="noopener">
     Yale Economic Growth Center
-  </a>.
+  </a>. <a href="{{ '/about/' | relative_url }}" class="btn btn-primary">
+        Read more <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      </a>
 </p>
 
     <ul class="quick-links">
