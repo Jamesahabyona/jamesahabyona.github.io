@@ -8,7 +8,7 @@ hide_eyebrow: true
 
 I am an applied microeconomist interested in using administrative data, text,
 historical maps, and GIS data to study development-related topics. My current
-research focuses on mobile money adoption, artisanal mining, higher-education policy analysis, 
+research focuses on mobile money adoption, artisanal mining, higher education, 
 and the long-term impacts of early-life circumstances across Africa.
 
 I hold a **Master's in Economics from
