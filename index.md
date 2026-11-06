@@ -28,7 +28,6 @@ description: James Ahabyona is an applied microeconomist researching development
 
     <ul class="quick-links">
       <li><a href="mailto:{{ site.email }}">Email</a></li>
-      <li><a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a></li>
       <li><a href="https://linkedin.com/{{ site.linkedin_username }}" target="_blank" rel="noopener">LinkedIn</a></li>
       <li><a href="https://theeconomicmisfit.com/" target="_blank" rel="noopener">The Economic Misfit</a></li>
     </ul>
@@ -79,7 +78,7 @@ description: James Ahabyona is an applied microeconomist researching development
 </section>
 
 <!-- News (last 3) -->
-<section class="news-preview">
+<!-- <section class="news-preview">
   <div class="container">
     <h2 class="news-title">News</h2>
 
@@ -110,6 +109,7 @@ description: James Ahabyona is an applied microeconomist researching development
 
   </div>
 </section>
+-->
 
 <!-- The Economic Misfit -->
 <section class="misfit">
