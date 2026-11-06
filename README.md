@@ -4,13 +4,6 @@ Modern academic personal site for James Ahabyona, applied microeconomist.
 Built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub Pages at
 <https://jamesahabyona.github.io/>.
 
-## Design
-
-The site uses a warm ivory + scholarly navy palette with subtle gold accents,
-inspired by faculty pages at Harvard Economics, Chicago Booth, MIT Sloan,
-and other top departments. The typography pairs **Playfair Display** (serif,
-for headlines) with **Inter** (sans, for body) and **JetBrains Mono** (for
-small monospaced details like dates and labels).
 
 The design is:
 
@@ -95,8 +88,6 @@ chronological order.
 
 ## Credits
 
-- Design inspired by faculty pages at Harvard, Chicago Booth, MIT Sloan,
-  Berkeley, and LSE.
 - Icons by [Font Awesome](https://fontawesome.com/).
 - Fonts by [Google Fonts](https://fonts.google.com/).
 - Built with [Jekyll](https://jekyllrb.com/).
