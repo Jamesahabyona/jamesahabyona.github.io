@@ -40,7 +40,7 @@ description: James Ahabyona is an applied microeconomist researching development
     <h2 class="research-preview-title">Recent Work</h2>
 
     <div class="research-item" data-paper="games-mobile-money">
-      <span class="year">2025</span>
+      <span class="year"> Last Updated June 2025</span>
       <div>
         <span class="stage stage--working">Working Paper</span>
         <h3 class="paper-title" role="button" tabindex="0" aria-expanded="false">Can Games Measure Mobile Money Adoption? Evidence from Mozambique</h3>
