@@ -40,7 +40,7 @@ description: James Ahabyona is an applied microeconomist researching development
     <h2 class="research-preview-title">Recent Work</h2>
 
     <div class="research-item" data-paper="games-mobile-money">
-      <span class="year">2026</span>
+      <span class="year">2025</span>
       <div>
         <span class="stage stage--working">Working Paper</span>
         <h3 class="paper-title" role="button" tabindex="0" aria-expanded="false">Can Games Measure Mobile Money Adoption? Evidence from Mozambique</h3>
@@ -65,6 +65,21 @@ description: James Ahabyona is an applied microeconomist researching development
         </div>
         <div class="paper-links">
           <a href="mailto:jemo44t@gmail.com?subject=Request%3A%20Artisanal%20Mines%20paper">Available on request</a>
+        </div>
+      </div>
+    </div>
+
+        <div class="research-item" data-paper="entrance-exams">
+      <span class="year">2026</span>
+      <div>
+        <span class="stage stage--progress">Work in Progress</span>
+        <h3 class="paper-title" role="button" tabindex="0" aria-expanded="false"> Evaluating the Effects of University Entrance Examinations</h3>
+        <p class="coauthors">With TBA</p>
+        <div class="paper-abstract" hidden>
+        Using administrative data on applications, admissions, enrollment, and entrance examination scores, this project examines how changes in admission rules that place greater emphasis on entrance examination performance affect application patterns, the gender composition of admitted students, and the test scores of admitted students.
+        </div>
+        <div class="paper-links">
+          <a href="mailto:jemo44t@gmail.com?subject=Request%3A%20Uni%20Extrance Exams%20paper">Available on request</a>
         </div>
       </div>
     </div>
