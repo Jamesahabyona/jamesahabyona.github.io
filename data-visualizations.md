@@ -11,7 +11,12 @@ Tools used include Stata, Python, and QGIS.
 
 ## Maps
 
-<div class="viz-grid">
+![data-visualizations](/img/dhsgoldafrica.png)
+
+
+     <p>Geospatial overlap between Demographic and Health Survey clusters and historical artisanal mining activity across the continent. Used in the artisanal-mines and women-empowerment project.</p>
+
+<!--  <div class="viz-grid">
   <article class="viz-card fade-in">
     <div class="thumb"><img src="{{ '/img/dhsgoldafrica.png' | relative_url }}" alt="Geospatial distribution of DHS clusters and artisanal mining activity in Africa" loading="lazy"></div>
     <div class="body">
@@ -26,7 +31,7 @@ Tools used include Stata, Python, and QGIS.
 
 ## Graphs
 
-<p class="coming-soon">Graphs coming soon.</p>
+<p class="coming-soon">Graphs coming soon.</p> -->
 
-> Want a higher-resolution version of any of these, or the source code that
+--> Want a higher-resolution version of any of these, or the source code that
 > produced them? [Email me](mailto:jemo44t@gmail.com).
