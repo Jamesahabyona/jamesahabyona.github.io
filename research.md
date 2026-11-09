@@ -68,11 +68,12 @@ hide_eyebrow: true
     <h3>Child Labour in Uganda: An Annotated Bibliography</h3>
     <p class="coauthors">Policy Research Report &middot; with Vanessa Cordeiro</p>
     <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-uganda">Abstract</button>
-    <div class="paper-abstract" id="abstract-uganda" hidden>
+    <div class="paper-abstract" id="abstract-uganda" hidden> 
       A comprehensive overview of child labour in Uganda, synthesizing research findings on child labour patterns, educational impacts, and intervention effectiveness. The bibliography covers work published between 2000 and 2021, with thematic indexing by region, sector, and methodology, and is intended as a reference for policymakers, practitioners, and researchers working on child-labour-related programming in East Africa.
     </div>
     <div class="paper-links">
       <a href="/Uganda-1.pdf">Download (PDF)</a>
+      <a href="https://wncb.org/annotated-bibliographies-for-wncb-countries/" target="_blank" rel="noopener noreferrer">Visit Project Website</a>
     </div>
   </div>
 </div>
