@@ -9,7 +9,7 @@ hide_eyebrow: true
 A selection of graphs and maps from my research, and data projects.
 Tools used include Stata, Python, and QGIS.
 
-## <center> Maps  </center>
+# <center> Maps  </center>
 - - -
 
 ![data-visualizations](/img/dhsgoldafrica.png)
