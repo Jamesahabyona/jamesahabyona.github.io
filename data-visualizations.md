@@ -14,7 +14,7 @@ Tools used include Stata, Python, and QGIS.
 ![data-visualizations](/img/dhsgoldafrica.png)
 
 
-     <p>Geospatial overlap between Demographic and Health Survey clusters and historical artisanal mining activity across the continent. Used in the artisanal-mines and women-empowerment project.</p>
+Geospatial overlap between Demographic and Health Survey clusters and historical artisanal mining activity across the continent. Used in the artisanal-mines and women-empowerment project.
 
 <!--  <div class="viz-grid">
   <article class="viz-card fade-in">
