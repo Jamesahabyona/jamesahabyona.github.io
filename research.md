@@ -45,6 +45,21 @@ hide_eyebrow: true
   </div>
 </div>
 
+<div class="research-item">
+  <span class="year">2026</span>
+  <div>
+    <h3>Evaluating the Effects of University Entrance Examinations</h3>
+    <p class="coauthors">With TBA</p>
+    <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-entrance">Abstract</button>
+    <div class="paper-abstract" id="abstract-entrance" hidden>
+   Using administrative data on applications, admissions, enrollment, and entrance examination scores, this project examines how changes in admission rules that place greater emphasis on entrance examination performance affect application patterns, the gender composition of admitted students, and the test scores of admitted students.
+    </div>
+    <div class="paper-links">
+      <a href="mailto:jemo44t@gmail.com?subject=Request%3A%20Uni%20Entrance Exams%20paper">Available on request</a>
+    </div>
+  </div>
+</div>
+
 ## Publications &amp; Reports
 
 <div class="research-item">
