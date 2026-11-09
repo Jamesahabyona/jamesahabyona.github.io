@@ -33,5 +33,5 @@ Tools used include Stata, Python, and QGIS.
 
 <p class="coming-soon">Graphs coming soon.</p> -->
 
---> Want a higher-resolution version of any of these, or the source code that
-> produced them? [Email me](mailto:jemo44t@gmail.com).
+<!--  Want a higher-resolution version of any of these, or the source code that
+> produced them? [Email me](mailto:jemo44t@gmail.com). -->
